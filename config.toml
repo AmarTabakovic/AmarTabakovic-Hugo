@@ -1,0 +1,18 @@
+baseURL = "http://www.amartabakovic.ch/"
+languageCode = "en-us"
+title = "Amar Tabakovic"
+theme = "amar-theme"
+
+# [menu]
+#  [[menu.main]]
+#    name = "About"
+#    pre = "about"
+#    url = "/about/"
+#    weight = 1
+#  [[menu.main]]
+#    name = "Blog"
+#    pre = "pen-tool"
+#    url = "/blog/"
+#    weight = 2
+    
+  

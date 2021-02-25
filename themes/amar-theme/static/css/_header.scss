@@ -1,0 +1,20 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: $header-height;
+    align-items: center;
+
+    .header-left {
+        padding-left: $side-page-padding;
+    }
+
+    .header-right {
+        padding-right: $side-page-padding;
+    }
+}
+
+#nav {
+    * {
+        padding-left: $side-page-padding;
+    }
+}

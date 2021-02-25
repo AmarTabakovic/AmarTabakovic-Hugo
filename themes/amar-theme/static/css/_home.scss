@@ -1,0 +1,12 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: calc(90vh - #{$header-height});
+}
+
+#cta-home {
+    padding-bottom: 5px;
+}

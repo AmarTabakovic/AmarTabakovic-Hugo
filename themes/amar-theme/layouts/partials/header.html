@@ -1,0 +1,13 @@
+<div id="header">
+    <p class="header-title header-left">
+        {{ .Title }}
+    </p>
+    <nav id="nav" class="header-right">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+</div>

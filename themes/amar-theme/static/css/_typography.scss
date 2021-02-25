@@ -1,0 +1,56 @@
+
+$inter-stack: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
+
+
+p, h1, h2, h3, h4, h5, a, span, li {
+    font-family: $inter-stack;
+}
+
+p, h1, h2, h3 {
+    color: $font-color-light;
+    
+}
+
+.highlight-yellow {
+    color: $yellow;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+}
+
+p, a, li {
+    font-family: $inter-stack;
+    letter-spacing: -0.06em;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+h1 {
+    font-family: $inter-stack;
+    font-size: 25pt;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-family: $inter-stack;// $playfair-stack;
+    font-size: 20pt;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+
+}
+
+h3 {
+    color: $font-color-light;
+    font-family: $inter-stack;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.padded-text {
+    padding-bottom: 15px;
+}
