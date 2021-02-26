@@ -1,8 +1,8 @@
 <div id="header">
-    <p class="header-title header-left">
-        {{ .Title }}
+    <p class="header-title">
+        <a href="{{ .Site.BaseURL }}">Amar Tabakovic</a>
     </p>
-    <nav id="nav" class="header-right">
+    <nav id="nav" class="">
         {{ range .Site.Menus.main }}
         <a class="nav-link" href="{{ .URL }}">
         {{ $text := print .Name | safeHTML }}

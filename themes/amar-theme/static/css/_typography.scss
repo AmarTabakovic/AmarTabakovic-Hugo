@@ -19,6 +19,11 @@ a {
     color: $link-color;
     text-decoration: none;
 
+    &:hover {
+        @include hover-color($link-color);
+    }
+    
+
 }
 
 p, a, li {

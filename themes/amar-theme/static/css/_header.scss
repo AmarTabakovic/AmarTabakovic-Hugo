@@ -4,17 +4,19 @@
     height: $header-height;
     align-items: center;
 
-    .header-left {
-        padding-left: $side-page-padding;
-    }
+    
 
-    .header-right {
-        padding-right: $side-page-padding;
+    * {
+        color: $font-color-light;
+        &:hover {
+            @include hover-color($font-color-light);
+        }
     }
 }
 
 #nav {
     * {
-        padding-left: $side-page-padding;
+        padding-left: 25px;
+        
     }
 }
