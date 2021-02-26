@@ -17,6 +17,14 @@
 #nav {
     * {
         padding-left: 25px;
+        @include for-phone-only {
+            padding-left:10px;
+        }
         
     }
+}
+
+#header-title {
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }

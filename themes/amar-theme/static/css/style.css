@@ -92,11 +92,17 @@ body::-webkit-scrollbar {
   padding: 0 100px;
 }
 
-p, h1, h2, h3, h4, h5, a, span, li {
+@media (max-width: 599px) {
+  #main {
+    padding: 0 calc(100px - (0.90 * 100px));
+  }
+}
+
+p, h1, h2, h3, h4, h5, a, span, li, strong {
   font-family: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, strong {
   color: #FFFFFF;
 }
 
@@ -146,6 +152,10 @@ h3 {
   padding-bottom: 15px;
 }
 
+strong {
+  font-weight: 600;
+}
+
 #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,6 +179,17 @@ h3 {
 
 #nav * {
   padding-left: 25px;
+}
+
+@media (max-width: 599px) {
+  #nav * {
+    padding-left: 10px;
+  }
+}
+
+#header-title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 #home {

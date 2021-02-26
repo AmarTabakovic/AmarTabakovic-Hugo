@@ -18,4 +18,8 @@ body {
 
 #main {
     padding: 0 $side-page-padding;
+
+    @include for-phone-only {
+        padding: 0 calc(#{$side-page-padding} - (0.90 * #{$side-page-padding}));
+    }
 }

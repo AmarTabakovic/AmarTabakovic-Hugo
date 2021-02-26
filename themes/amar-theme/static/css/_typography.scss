@@ -2,11 +2,11 @@
 $inter-stack: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
 
 
-p, h1, h2, h3, h4, h5, a, span, li {
+p, h1, h2, h3, h4, h5, a, span, li, strong {
     font-family: $inter-stack;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, strong {
     color: $font-color-light;
     
 }
@@ -60,4 +60,8 @@ h3 {
 
 .padded-text {
     padding-bottom: 15px;
+}
+
+strong {
+    font-weight: 600;
 }
