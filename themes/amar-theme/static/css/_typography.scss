@@ -18,11 +18,12 @@ p, h1, h2, h3 {
 a {
     color: $link-color;
     text-decoration: none;
-    transition: color 0.4s;
 
     &:hover {
         @include hover-color($link-color);
     }
+
+    
     
 
 }
