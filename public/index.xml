@@ -5,6 +5,34 @@
     <link>http://www.amartabakovic.ch/</link>
     <description>Recent content on Amar Tabakovic</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www.amartabakovic.ch/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Feb 2021 12:43:48 +0100</lastBuildDate><atom:link href="http://www.amartabakovic.ch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://www.amartabakovic.ch/blog/test-post/</link>
+      <pubDate>Sat, 27 Feb 2021 12:43:48 +0100</pubDate>
+      
+      <guid>http://www.amartabakovic.ch/blog/test-post/</guid>
+      <description>hihihßß</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://www.amartabakovic.ch/about/</link>
+      <pubDate>Fri, 26 Feb 2021 23:20:23 +0100</pubDate>
+      
+      <guid>http://www.amartabakovic.ch/about/</guid>
+      <description>tbd</description>
+    </item>
+    
+    <item>
+      <title>Personal site in Hugo</title>
+      <link>http://www.amartabakovic.ch/blog/personal-site-hugo/</link>
+      <pubDate>Fri, 26 Feb 2021 22:40:07 +0100</pubDate>
+      
+      <guid>http://www.amartabakovic.ch/blog/personal-site-hugo/</guid>
+      <description>Creating your own personal site can be a daunting experience, especially considering how many possibilities there are in terms of design choices and technologies.</description>
+    </item>
+    
   </channel>
 </rss>

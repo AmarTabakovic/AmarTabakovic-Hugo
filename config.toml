@@ -1,5 +1,5 @@
 baseURL = "http://www.amartabakovic.ch/"
-languageCode = "en-us"
+languageCode = "us-en"
 title = "Amar Tabakovic"
 theme = "amar-theme"
 
@@ -14,5 +14,7 @@ theme = "amar-theme"
     pre = "pen-tool"
     url = "/blog/"
     weight = 2
+ 
+   
     
   

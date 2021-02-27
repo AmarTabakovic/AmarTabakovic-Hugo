@@ -1,0 +1,46 @@
+{{ define "main" }}
+<h1>
+    {{ .Title }}
+</h1>
+<br>
+
+<div id="list">
+   
+
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <a class="rect-link" href="{{ .RelPermalink }}">
+    <div class="rect">
+        <div class="img-wrapper">
+            {{ $link := .Permalink }}
+            {{ with .Params.Image }}
+            {{ $image := . }}
+            <img class="thumb"
+                src="{{$link}}{{$image}}"
+            >
+            </img>
+            {{ end }}
+        </div>
+        <div class="text-wrapper">
+        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+        {{ $dateFormat := .Site.Params.dateFormat | default "Jan '06" }}
+        <p><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time></p>    
+        <h2>{{ .Title }}</h2>
+
+            {{ with .Params.categories }}
+            {{ range . }}
+    
+            <p>{{ . }}</p>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    </a>
+
+    {{ end }}
+
+</div>
+
+
+
+
+{{ end }}

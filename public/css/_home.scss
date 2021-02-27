@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     height: calc(90vh - #{$header-height});
+    margin-top: -50px;
+    
 }
 
 #cta-home {

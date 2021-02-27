@@ -4,12 +4,14 @@
     height: $header-height;
     align-items: center;
 
+
     
 
-    * {
+    a {
         color: $font-color-light;
+        text-decoration: none;
         &:hover {
-            @include hover-color($font-color-light);
+            text-decoration: underline;  //@include hover-color($font-color-light);
         }
     }
 }
