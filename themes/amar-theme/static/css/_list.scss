@@ -30,6 +30,17 @@
 
 .rect {
     //background-color: $white;
+    margin-bottom: 30px;
+
+    &:hover {
+
+        text-decoration: none;
+
+    }
+
+
+
+
     height: $rect-height;
     width: $rect-width;
     flex: 0 0 30%;

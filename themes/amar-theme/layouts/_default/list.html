@@ -9,7 +9,7 @@
 
     {{ range .Pages.ByPublishDate.Reverse }}
     <a class="rect-link" href="{{ .RelPermalink }}">
-    <div class="rect">
+    
         <div class="img-wrapper">
             {{ $link := .Permalink }}
             {{ with .Params.Image }}
@@ -33,7 +33,7 @@
             {{ end }}
             {{ end }}
         </div>
-    </div>
+    
     </a>
 
     {{ end }}
