@@ -2,7 +2,7 @@
     <a id="header-title" href="{{ .Site.BaseURL }}" >Amar Tabakovic</a>
     <nav id="nav" class="">
         {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
+        <a class="nav-link" href="{{ .URL }}" >
         {{ $text := print .Name | safeHTML }}
         {{ $text }}
         </a>

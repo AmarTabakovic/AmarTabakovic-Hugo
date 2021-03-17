@@ -27,7 +27,7 @@ body {
     
 
     @include for-phone-only {
-        padding: 0 calc(#{$side-page-padding} - (0.90 * #{$side-page-padding}));
+        padding: 0 calc(#{$side-page-padding} - (0.95 * #{$side-page-padding}));
     }
 
     @include for-tablet-portrait-up{
@@ -41,4 +41,4 @@ body {
     @include for-big-desktop-up {
         padding: 0 calc(#{$side-page-padding} + (0.8 * #{$side-page-padding}));
     }
-}
+} 

@@ -1,6 +1,7 @@
 {{ define "main" }}
+{{ $time := .ReadingTime }}
 <h1>{{ .Title }}</h1>
-<p>{{ .Params.Description }}</p>
+<p class="padded-text">{{ .Params.Description }}</p>
 <br>
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "January 2, 2006" }}
@@ -12,13 +13,17 @@
     {{ range . }}
     {{ $href := print (absURL "categories/") (urlize .) }}
     
+    
     <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+
+    •
+    {{ $time }} min
+
     {{ end }}
     {{ end }}
 
 </p>
 
-<br>
-<br>
+
 {{ .Content }}
 {{ end }}

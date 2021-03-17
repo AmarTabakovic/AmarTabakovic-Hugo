@@ -4,16 +4,21 @@ title = "Amar Tabakovic"
 theme = "amar-theme"
 
  [menu]
-  [[menu.main]]
-    name = "About"
-    pre = "about"
-    url = "/about/"
+   [[menu.main]]
+    name = "Projects"
+    pre = "pen-tool"
+    url = "/projects/"
     weight = 1
-  [[menu.main]]
+   [[menu.main]]
     name = "Blog"
     pre = "pen-tool"
     url = "/blog/"
     weight = 2
+   [[menu.main]]
+    name = "About"
+    pre = "about"
+    url = "/about/"
+    weight = 3
  
    
     

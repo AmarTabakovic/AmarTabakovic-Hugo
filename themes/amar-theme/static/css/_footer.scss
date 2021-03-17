@@ -1,6 +1,6 @@
 footer {
     bottom: 0;
-    padding: 20px 0;
+    height: $footer-height;
     position: fixed;
     background-color: $bg-color-primary;
     display: flex;
@@ -10,3 +10,9 @@ footer {
     -webkit-backface-visibility: hidden;
 }
 
+#footer-logos {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    
+}

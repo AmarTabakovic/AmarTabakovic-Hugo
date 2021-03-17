@@ -39,6 +39,6 @@ body {
     }
 
     @include for-big-desktop-up {
-        padding: 0 calc(#{$side-page-padding} + (0.6 * #{$side-page-padding}));g
+        padding: 0 calc(#{$side-page-padding} + (0.6 * #{$side-page-padding}));
     }
 }

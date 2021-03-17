@@ -3,6 +3,7 @@ $navy: #000118;
 $yellow: #FFF28B;
 $red: #f54b4b;
 $white: #FFFFFF;
+$off-white: rgb(173, 173, 173);
 
 //Color schemes
 $bg-color-primary: $navy;
@@ -11,10 +12,12 @@ $font-color-light: $white;
 
 $link-color: $red;
 
+$popout-color: $yellow;
+
 //Sizes
 $header-height: 50px;
 
-
+$footer-height: 50px;
 
 $rect-height: 250px;
 $rect-width: 320px;
