@@ -1,15 +1,16 @@
 #blog-list {
     padding-top: 30px;
     * {
+        text-decoration: none;
         &:hover {
         //text-decoration: none;
-        color: $font-color-light;
+        //color: $font-color-primary-light;
         }
     }
 }
 
 .blog-element {
-    border-top: 1px solid $off-white;
+    border-top: 1px solid $blend-color;//$off-white;
     padding: 25px 0;
     display: flex;
 
@@ -27,4 +28,8 @@
     padding-right: 100px;
     width:max-content;
 
+}
+
+.blog-time {
+    padding-bottom: 40px;
 }

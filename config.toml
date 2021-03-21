@@ -3,20 +3,42 @@ languageCode = "us-en"
 title = "Amar Tabakovic"
 theme = "amar-theme"
 
- [menu]
-   [[menu.main]]
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  author = "Amar Tabakovic"
+  github = "https://github.com/amartabakovic"
+  sitename = "Amar Tabakovic"
+  twitter = "@AmarrrrrT"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "solarized-dark256"
+    tabWidth = 4
+
+[menu]
+  [[menu.main]]
     name = "Projects"
-    pre = "pen-tool"
     url = "/projects/"
     weight = 1
-   [[menu.main]]
+  [[menu.main]]
     name = "Blog"
-    pre = "pen-tool"
     url = "/blog/"
     weight = 2
-   [[menu.main]]
+  [[menu.main]]
     name = "About"
-    pre = "about"
     url = "/about/"
     weight = 3
  

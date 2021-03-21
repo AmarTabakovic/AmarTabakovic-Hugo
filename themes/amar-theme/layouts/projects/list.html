@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<h1>
+    {{ .Title }}
+</h1>
+<p class="padded-text">
+    {{.Description}}
+</p>
+
+<div class="list" id="blog-list">
+   
+
+    {{ range .Pages.ByPublishDate.Reverse }}
+    
+    <a href="{{ .RelPermalink }}"> 
+    <div class="project-element">
+        <div class="project-description">
+            <div class="project-text">
+                <h2 class="project-list-title">{{ .Title }}</h2>
+                <br>
+                {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+                {{ $dateFormat := .Site.Params.dateFormat | default "2006" }}
+                <p class="no-margin">
+                    {{ .Params.Category }}
+                </p>
+                <p class="no-margin">
+                    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+                </p>
+                
+            </div>
+            
+        </div>
+        <div class="project-image">
+                {{ $link := .Permalink }}
+                {{ with .Params.Image }}
+                {{ $image := . }}
+                <div class="project-thumb-wrapper">
+                <img class="project-thumb"
+                    src="{{$link}}{{$image}}"
+                >
+                </div>
+                {{ end }}
+        </div>
+    </div>
+    </a>
+    
+
+    {{ end }}
+
+</div>
+
+
+
+
+{{ end }}

@@ -1,8 +1,20 @@
 {{ define "main" }}
 <div id="home">
 
-  <h1 class="padded-text">Hi, I'm <span class="highlight">Amar</span>.</h1>
-  <p class="padded-text">I'm 19 years old and based in <a href="https://en.wikipedia.org/wiki/Basel">Basel, Switzerland</a>.</p>
+  <h1 class="padded-text">Hi, I'm <span id="dark-mode-toggle" class="highlight-ata">Amar</span>.</h1>
+  <p>I'm 19 years old and based in <a href="https://en.wikipedia.org/wiki/Basel">Basel, Switzerland</a>.</p>
  
 </div>
+<script>
+var toggle = document.getElementById("dark-mode-toggle");
+
+toggle.addEventListener("click", () => {
+    if (document.body.classList.contains('dark-theme')) {
+        setTheme("light");
+    } else {
+        setTheme("dark");
+    }
+});
+
+</script>
 {{ end }}

@@ -2,21 +2,23 @@
     display: flex;
     justify-content: space-between;
     height: $header-height;
-    align-items: center;
+    //align-items: center;
+    margin-top: 15px;
 
-
+    color: $font-color-primary-light;
     
 
     a {
-        color: $font-color-light;
         text-decoration: none;
-        &:hover {
+        /*&:hover {
             text-decoration: underline;  //@include hover-color($font-color-light);
-        }
+        }*/
     }
 }
 
 #nav {
+    display: flex;
+
     * {
         padding-left: 25px;
         @include for-phone-only {
@@ -24,6 +26,12 @@
         }
         
     }
+
+    @media screen and (max-width: 331px){
+        flex-direction: column;
+        text-align: right;
+    }
+    
 }
 
 #header-title {

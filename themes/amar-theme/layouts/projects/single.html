@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $time := .ReadingTime }}
+<h1>{{ .Title }}</h1>
+<p class="padded-text">{{ .Params.Description }}</p>
+<br>
+<p class="blog-time">{{ .Params.Category }}
+• 
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "2006" }}
+
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
+</p>
+
+
+{{ .Content }}
+{{ end }}

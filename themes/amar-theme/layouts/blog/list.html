@@ -7,7 +7,7 @@
     {{.Description}}
 </p>
 
-<div class="list" id="blog-list">
+<div id="blog-list">
    
 
     {{ range .Pages.ByPublishDate.Reverse }}
@@ -18,7 +18,7 @@
         <div class="blog-left">
             {{ $dateTime := .PublishDate.Format "2006-01-02" }}
             {{ $dateFormat := .Site.Params.dateFormat | default "Jan '06" }}
-            <p>
+            <p class="no-margin">
                 <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
             </p>
         </div>
@@ -27,7 +27,7 @@
                 {{ with .Params.categories }}
                 {{ range . }}
         
-                <p>{{ . }}
+                <p class="no-margin">{{ . }}
                     •  
                     {{ $time }} min
                   

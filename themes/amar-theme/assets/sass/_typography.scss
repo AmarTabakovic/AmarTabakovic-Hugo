@@ -1,0 +1,128 @@
+
+$inter-stack: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
+$playfair-stack: 'Playfair Display', Baskerville, Serif;
+
+p, h1, h2, h3, h4, h5, a, span, li, strong {
+    font-family: $inter-stack;
+    line-height: 1.5em;
+}
+
+p, h1, h2, h3, strong, li {
+    color: $font-color-primary-light;;
+    
+}
+
+.highlight-ata {
+    //color: $popout-color;
+
+    color: $bg-color-primary-light;
+    background-color: $font-color-primary-light;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+
+}
+
+p {
+    margin-bottom: 1.5em;
+
+    &.no-margin {
+        margin: 0;
+    }
+}
+
+a {
+    color: $font-color-primary-light;;//$link-color;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: $blend-color;
+}
+
+p, a, li {
+    font-family: $inter-stack;
+    //letter-spacing: -0.06em;
+    font-weight: 300;
+    font-size: 12pt;
+
+
+    @include for-desktop-up {
+        font-size: 13pt;
+    }
+}
+
+h1 {
+    font-family: $inter-stack;
+    font-size: 28pt; //25pt;
+    font-weight: 600;
+    //letter-spacing: -0.01em;
+    padding-bottom: 20px;
+
+    @include for-desktop-up {
+      //  font-size: 30pt;
+    }
+}
+
+h2 {
+    font-family: $playfair-stack;//$inter-stack;
+    font-size: 25pt;
+    font-weight: 700;//100;
+    //letter-spacing: -0.03em;
+    padding-bottom: 10px;
+
+    @include for-desktop-up {
+       // font-size: 25pt;
+    }
+
+}
+
+h3 {
+    color: $font-color-primary-light;
+    font-family: $inter-stack;
+    font-size: 10pt;
+    font-weight: 400;
+    //letter-spacing: -0.01em;
+
+    @include for-desktop-up {
+      //  font-size: 15pt;
+    }
+}
+
+/*.padded-text {
+    padding-bottom: 15px;
+}*/
+
+strong {
+    font-weight: 600;
+}
+
+
+
+.highlight {
+    border-radius: 9px;
+    border-collapse: separate; 
+    overflow: hidden;
+    perspective: 1px;
+    margin-bottom: 3em;
+}
+
+blockquote {
+   border-left: 1px solid $blend-color;
+   padding-left: 15px;
+   margin-bottom: 1.5em;
+   font-style: italic;
+}
+
+pre {
+    padding: 20px;
+    border-radius: 9px;
+    
+}
+code {
+    font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+    overflow: scroll;
+    * {
+        font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+    }
+}

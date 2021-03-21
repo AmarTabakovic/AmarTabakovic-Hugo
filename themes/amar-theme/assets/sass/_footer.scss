@@ -1,0 +1,29 @@
+footer {
+    bottom: 0;
+    height: $footer-height;
+    position: fixed;
+    background-color: $bg-color-primary-light;
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    justify-content: space-between;
+
+    @media screen and (max-width: 390px)  {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: $footer-height + 30px;
+    }
+}
+
+#footer-logos {
+    display: flex;
+    width: 170px;
+    justify-content: space-around;
+
+    @include for-phone-only {
+        width: 140px;
+    }
+    
+}

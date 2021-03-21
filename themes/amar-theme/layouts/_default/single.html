@@ -5,7 +5,7 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "January 2, 2006" }}
 
-<p class="padded-text"><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
+<p class="blog-time"><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
     • 
 
     {{ with .Params.categories }}

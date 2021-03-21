@@ -4,10 +4,28 @@
     <body>
         
         {{- partial "header.html" . -}}
-        <div id="content" class="side-padding">
+        <div id="content" class="wrapper">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
        
     </body>
+    <script>
+
+        function setTheme(mode) {
+            localStorage.setItem("dark-mode-storage", mode);
+
+          if(mode == "dark") {
+            //darkTheme.disabled = false;
+            document.body.classList += " dark-theme";
+          }
+          else if(mode == "light") {
+            document.body.classList -= " dark-theme";
+          }
+        }
+  
+          var savedTheme = localStorage.getItem("dark-mode-storage") || "";
+          setTheme(savedTheme);
+  
+        </script>
 </html>

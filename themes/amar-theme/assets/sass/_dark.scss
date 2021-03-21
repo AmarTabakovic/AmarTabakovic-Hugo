@@ -1,0 +1,26 @@
+.dark-theme {
+    background-color: $bg-color-primary-dark;
+    
+    * {
+        color: $font-color-primary-dark;
+    }
+
+    footer {
+        background-color: $bg-color-primary-dark !important;
+    }
+
+    .highlight-ata {
+        color: $bg-color-primary-dark;
+        background-color: $bg-color-primary-light;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0px;
+        background-color: $bg-color-primary-dark;
+      }
+
+    ::selection {
+        background-color: $font-color-primary-dark;
+        color: $bg-color-primary-dark;
+    }
+}
