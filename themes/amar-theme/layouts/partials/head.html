@@ -22,7 +22,7 @@
 
     <meta name="keywords" content={{ .Params.Keywords }} >
 
-    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
 
     {{ $title := print .Site.Title " | " .Title }}
