@@ -1,4 +1,4 @@
-baseURL = "http://www.amartabakovic.ch/"
+baseURL = "https://www.amartabakovic.ch/"
 languageCode = "us-en"
 title = "Amar Tabakovic"
 theme = "amar-theme"
