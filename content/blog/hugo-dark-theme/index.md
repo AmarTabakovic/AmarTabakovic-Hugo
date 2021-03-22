@@ -35,7 +35,7 @@ $font-color-primary-dark: $white;
 
 {{< /highlight >}}
 
-For this example, I will set the base colors in **_base.html** in the *base* element. You can of course add more classes to your liking.
+For this example, I will set the base colors in **_base.html** in the *body* element. You can of course add more classes to your liking.
 
 **_example.scss:**
 
