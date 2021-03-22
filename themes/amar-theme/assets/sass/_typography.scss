@@ -117,11 +117,11 @@ blockquote {
 pre {
     padding: 20px;
     border-radius: 9px;
+    overflow: scroll;
     
 }
 code {
     font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
-    overflow: scroll;
     * {
         font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     }
