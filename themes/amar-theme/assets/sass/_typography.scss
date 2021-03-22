@@ -105,6 +105,7 @@ strong {
     overflow: hidden;
     perspective: 1px;
     margin-bottom: 3em;
+    //overflow: scroll;
 }
 
 blockquote {
@@ -117,7 +118,7 @@ blockquote {
 pre {
     padding: 20px;
     border-radius: 9px;
-    overflow: scroll;
+    overflow: scroll !important;
     
 }
 code {
