@@ -25,7 +25,8 @@ canonifyURLs = true
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "solarized-dark256"
+#    style = "native"
+    style = "rrt"
     tabWidth = 4
 
 [menu]
