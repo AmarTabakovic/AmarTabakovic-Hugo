@@ -1,12 +1,16 @@
 baseURL = "https://www.amartabakovic.ch/"
 languageCode = "us-en"
 title = "Amar Tabakovic"
+description = "Personal site of Amar Tabakovic."
 theme = "amar-theme"
 
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 canonifyURLs = true
+
+[Author]  
+  name = "Amar Tabakovic"
 
 [params]
   author = "Amar Tabakovic"

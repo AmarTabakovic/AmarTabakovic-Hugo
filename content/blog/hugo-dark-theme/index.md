@@ -3,6 +3,7 @@ title: "Dark mode in Hugo with SCSS"
 date: 2021-03-21T22:17:02+01:00
 draft: false
 description: "My implementation of a dark mode in Hugo."
+author: Amar Tabakovic
 categories: ["Web"]
 keywords: ["hugo", "dark"]
 ---

@@ -1,0 +1,50 @@
+{{ if or (eq .Section "blog") (eq .Section "projects") }}
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="{{ .Site.Params.facebook }}" />
+<meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+<meta property="article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+
+{{ with.Params.author }}
+  <meta property="og:article:author" content="{{humanize . }}" />
+  <meta property="article:author" content="{{humanize . }}" />
+  <meta name="author" content="{{humanize . }}" />
+{{ end }}
+
+{{ with.Params.category }}
+  <meta name="news_keywords" content="{{ index . 0 }}" />
+  <meta property="article:section" content="{{ index . 0 }}" />
+{{ end }}
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "{{ .Site.BaseURL }}"
+        },
+        "articleSection" : "{{ .Section }}",
+        "name" : "{{ .Title }}",
+        "headline" : "{{ .Title }}",
+        // "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+        "description" : "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"
+        "inLanguage" : "{{ .Lang }}",
+        "author" : "{{ range .Site.Author }}{{ . }}{{ end }}",
+        "creator" : "{{ range .Site.Author }}{{ . }}{{ end }}",
+        "publisher": "{{ range .Site.Author }}{{ . }}{{ end }}",
+        "accountablePerson" : "{{ range .Site.Author }}{{ . }}{{ end }}",
+        "copyrightHolder" : "{{ range .Site.Author }}{{ . }}{{ end }}",
+        "copyrightYear" : "{{ .Date.Format "2006" }}",
+        "datePublished": "{{ .Date | safeHTML }}",
+        "dateModified" : "{{ .Date | safeHTML }}",
+        "url" : "{{ .Permalink }}",
+        "wordCount" : "{{ .WordCount }}",
+        "keywords" : [ {{ if isset .Params "keywords" }}{{ range .Params.keywords }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
+    }
+    </script>
+{{ end }}
+
+
+
+
