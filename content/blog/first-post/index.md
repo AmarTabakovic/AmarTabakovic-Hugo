@@ -9,8 +9,8 @@ keywords: ["hugo", "static", "testing"]
 
 At this point in time I have no idea what to write about. I'll see what comes out of it.
 
-> Test
+> The wise man seeks little joys, knowing that life is long and that his quota of great joys is distinctly limited.
 
-\- Amar Tabakovic
+\- William Feather
 
 
