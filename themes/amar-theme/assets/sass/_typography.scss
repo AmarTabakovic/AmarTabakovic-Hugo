@@ -2,6 +2,10 @@
 $inter-stack: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
 $playfair-stack: 'Playfair Display', Baskerville, Serif;
 
+ul {
+    margin: 5px 0;
+}
+
 p, h1, h2, h3, h4, h5, a, span, li, strong {
     font-family: $inter-stack;
     line-height: 1.5em;
@@ -60,7 +64,7 @@ h1 {
     padding-bottom: 20px;
 
     @include for-desktop-up {
-      //  font-size: 30pt;
+        font-size: 29pt;
     }
 }
 
@@ -72,7 +76,7 @@ h2 {
     padding-bottom: 10px;
 
     @include for-desktop-up {
-       // font-size: 25pt;
+       font-size: 26pt;
     }
 
 }
@@ -89,6 +93,18 @@ h3 {
     }
 }
 
+h5 {
+    color: $font-color-primary-light;
+    font-family: $inter-stack;
+    font-weight: 600;
+    font-size: 12pt;
+    margin: 0;
+
+    @include for-desktop-up {
+        font-size: 13pt;
+    }
+}
+
 /*.padded-text {
     padding-bottom: 15px;
 }*/
@@ -97,7 +113,12 @@ strong {
     font-weight: 600;
 }
 
-
+blockquote {
+    border-left: 1px solid $blend-color;
+    padding-left: 15px;
+    margin-bottom: 1.5em;
+    font-style: italic;
+ }
 
 .highlight {
     border-radius: 9px;
@@ -109,6 +130,7 @@ strong {
 
     pre {
         overflow: scroll !important;
+        
 
         &::-webkit-scrollbar {
             display: none;
@@ -124,22 +146,21 @@ strong {
     }
 }
 
-blockquote {
-   border-left: 1px solid $blend-color;
-   padding-left: 15px;
-   margin-bottom: 1.5em;
-   font-style: italic;
-}
+
 
 pre {
-    padding: 20px;
+    padding: 25px;
     border-radius: 13px;
     overflow: scroll !important;
+    line-height: 1.3em;
     
 }
 code {
-    font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+    font-size: 11pt;
+    
+
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     * {
-        font-family: Monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+        font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     }
 }

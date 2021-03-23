@@ -34,7 +34,7 @@
                 {{ with .Params.Featured_Image }}
                 {{ $image := . }}
                 <div class="project-thumb-wrapper">
-                <img class="project-thumb"
+                <img loading="lazy" class="project-thumb"
                     src="{{$link}}{{$image}}"
                 >
                 </div>

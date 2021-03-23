@@ -1,14 +1,14 @@
 ---
-title: How to exit Vim
+title: "How to exit Vim"
 date: 2021-03-19T23:51:25+01:00
 draft: true
-description: Vim, albeit not very beginner-friendly, can be very useful. This post shows how to exit Vim.
-author: Amar Tabakovic
+description: "Vim, albeit not very beginner-friendly, can be very useful. This post shows how to exit Vim."
+author: "Amar Tabakovic"
 categories:
-- Coding
+- "Coding"
 keywords:
-- vim
-- exit
+- "vim"
+- "exit"
 ---
 
 Many beginners, myself included, have come across the problem of exiting [Vim (VI iMproved)](https://vim.org). However, it's not as difficult as it may seem.

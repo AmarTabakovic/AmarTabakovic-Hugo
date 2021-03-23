@@ -29,7 +29,6 @@ canonifyURLs = true
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-#    style = "native"
     style = "rrt"
     tabWidth = 4
 

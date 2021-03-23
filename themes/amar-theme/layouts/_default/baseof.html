@@ -10,22 +10,10 @@
         {{- partial "footer.html" . -}}
        
     </body>
-    <script>
 
-        function setTheme(mode) {
-            localStorage.setItem("dark-mode-storage", mode);
+{{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
 
-          if(mode == "dark") {
-            //darkTheme.disabled = false;
-            document.body.classList += " dark-theme";
-          }
-          else if(mode == "light") {
-            document.body.classList -= " dark-theme";
-          }
-        }
-  
-          var savedTheme = localStorage.getItem("dark-mode-storage") || "";
-          setTheme(savedTheme);
-  
-        </script>
+<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+
+
 </html>

@@ -5,16 +5,9 @@
   <p>I'm 19 years old and based in <a href="https://en.wikipedia.org/wiki/Basel">Basel, Switzerland</a>.</p>
  
 </div>
-<script>
-var toggle = document.getElementById("dark-mode-toggle");
+{{ $built := resources.Get "js/home.js" | resources.Minify }}
 
-toggle.addEventListener("click", () => {
-    if (document.body.classList.contains('dark-theme')) {
-        setTheme("light");
-    } else {
-        setTheme("dark");
-    }
-});
+<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
-</script>
+
 {{ end }}

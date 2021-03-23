@@ -3,9 +3,12 @@ title: "Dark mode in Hugo with SCSS"
 date: 2021-03-21T22:17:02+01:00
 draft: false
 description: "My implementation of a dark mode in Hugo."
-author: Amar Tabakovic
-categories: ["Web"]
-keywords: ["hugo", "dark"]
+author: "Amar Tabakovic"
+categories: 
+- "Web"
+keywords:
+- "hugo"
+- "dark"
 ---
 
 Not too long ago, I developed my personal website using the static site generator [Hugo](https://gohugo.io/). While coming up with designs for this website, I was plagued with the choice of implementing it in either a light theme or a dark theme. I liked both variants, so I was very indecisive until I came up with an idea: 
@@ -18,7 +21,8 @@ And so I did using HTML, SCSS and plain JavaScript.
 
 In the **_variables.scss** file, all Sass variables, including the colors, are defined. In this example I will use the colors black and white.
 
-**_variables.scss:**
+##### _variables.scss:
+
 {{< highlight scss >}}
 /* --- COLORS --- */
 $white: #ffffff;
@@ -38,7 +42,7 @@ $font-color-primary-dark: $white;
 
 For this example, I will set the base colors in **_base.html** in the *body* element. You can of course add more classes to your liking.
 
-**_example.scss:**
+##### _example.scss:
 
 {{< highlight scss >}}
 body {
@@ -50,7 +54,7 @@ body {
 
 In the **_dark.scss** file, I've defined the rules for the dark theme.
 
-**_dark.scss:**
+##### _dark.scss:
 
 {{< highlight scss >}}
 .dark-theme {
@@ -64,7 +68,7 @@ After having defined the styling with SCSS, it was time to implement the toggle 
 
 From here on, some parts of the implementation are taken from [this great article by Radu Matei](https://radu-matei.com/blog/dark-mode/).
 
-**index.html:**
+##### index.html:
 
 {{< highlight html >}}
 <span id="dark-mode-toggle">Click me!</span>
@@ -76,7 +80,7 @@ The **main.js** file is included in the **baseof.html** partial. The function *s
 
 Additionally, the parameter value is saved in local storage, so that the selected theme persists across different pages. If there is no value found in local storage, an empty string will be used.
 
-**main.js:**
+##### main.js:
 {{< highlight javascript >}}
 
 function setTheme(mode) {
@@ -97,7 +101,7 @@ setTheme(savedTheme);
 
 The **toggleDarkTheme.js** file gets included in **index.html**. This file is responsible for catching the event from clicking on the toggle. The function *setTheme* gets called with "light" or "dark" as the parameter, depending on whether the *body* element has the class *dark-theme*.
 
-**toggleDarkTheme.js:**
+##### toggleDarkTheme.js:
 {{< highlight javascript >}}
 var toggle = document.getElementById("dark-mode-toggle");
 

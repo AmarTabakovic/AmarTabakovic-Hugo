@@ -23,18 +23,15 @@
             </p>
         </div>
         <div>
-
-                {{ with .Params.categories }}
-                {{ range . }}
-        
-                <p class="no-margin">{{ . }}
-                    •  
+            <p class="no-margin">
+                    {{ delimit (.Params.categories) ", " }}
+                    •
                     {{ $time }} min
                   
                 </p>
                
-                {{ end }}
-                {{ end }}
+                
+                
                 <h2>{{ .Title }}</h2>
         </div>
     </div>

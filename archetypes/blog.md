@@ -2,10 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-description: Description
-author: Amar Tabakovic
+description: "Description"
+author: "Amar Tabakovic"
 categories:
-- Example
+- "Example"
 keywords:
-- Test
+- "Test"
 ---
