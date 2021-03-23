@@ -10,7 +10,7 @@
 
     {{ partial "seo_schema" . }}
 
-    {{ $title := print .Site.Title " | " .Title }}
+    {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 
     <title itemprop="name">{{ $title }}</title>

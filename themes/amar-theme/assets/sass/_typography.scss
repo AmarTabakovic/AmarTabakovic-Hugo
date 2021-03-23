@@ -56,7 +56,7 @@ p, a, li {
 
 
     @include for-desktop-up {
-        font-size: 13pt;
+        //font-size: 13pt;
     }
 }
 
@@ -69,7 +69,7 @@ h1 {
     line-height: 1.2em;
 
     @include for-desktop-up {
-        font-size: 29pt;
+        //font-size: 29pt;
     }
 }
 
@@ -82,7 +82,7 @@ h2 {
     line-height: 1.5em;
 
     @include for-desktop-up {
-       font-size: 26pt;
+       //font-size: 26pt;
     }
 
 }
@@ -108,7 +108,7 @@ h5 {
     margin: 0;
 
     @include for-desktop-up {
-        font-size: 13pt;
+        //font-size: 13pt;
     }
 }
 
@@ -163,11 +163,11 @@ pre {
     
 }
 code {
-    font-size: 11pt;
+    font-size: 10pt;
     
 
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+    font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     * {
-        font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+        font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     }
 }

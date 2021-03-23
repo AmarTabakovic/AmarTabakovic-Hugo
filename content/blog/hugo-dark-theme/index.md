@@ -67,9 +67,9 @@ In the **_dark.scss** file, I've defined the rules for the dark theme.
 {{< /highlight >}}
 
 ## HTML
-After having defined the styling with SCSS, it was time to implement the toggle in HTML and JS. For this example, I will implement the toggle in the index page, just like I did with this website. However, the same can be done in e.g. *header.html*.
+After having defined the styling with SCSS, it was time to implement the toggle in HTML and JS. From here on, some parts of the implementation are taken from [this great article by Radu Matei](https://radu-matei.com/blog/dark-mode/).
 
-From here on, some parts of the implementation are taken from [this great article by Radu Matei](https://radu-matei.com/blog/dark-mode/).
+For this example, I will implement the toggle in the index page, just like I did with this website. However, the same can be done in e.g. *header.html*. The toggle will be a *span* element.
 
 ##### index.html:
 
