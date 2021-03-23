@@ -1,4 +1,10 @@
-<head>
+<head class="no-js">
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+  {{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
+
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,5 +47,19 @@
 
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+
+    <style type="text/css">
+      .no-js {
+        visibility: hidden;
+        opacity: 0;
+        }
+
+        .js {
+        visibility: visible;
+        opacity: 1;
+        }
+    </style>
+    
+
 
 </head>

@@ -11,9 +11,7 @@
        
     </body>
 
-{{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
 
-<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
 
 </html>

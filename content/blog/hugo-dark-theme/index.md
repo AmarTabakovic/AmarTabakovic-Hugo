@@ -9,6 +9,9 @@ categories:
 keywords:
 - "hugo"
 - "dark"
+- "theme"
+- "mode"
+- "scss"
 ---
 
 Not too long ago, I developed my personal website using the static site generator [Hugo](https://gohugo.io/). While coming up with designs for this website, I was plagued with the choice of implementing it in either a light theme or a dark theme. I liked both variants, so I was very indecisive until I came up with an idea: 
