@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $time := .ReadingTime }}
 <h1>{{ .Title }}</h1>
-<p class="padded-text">{{ .Params.Description }}</p>
+<p>{{ .Params.Description }}</p>
 <br>
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "January 2, 2006" }}

@@ -1,6 +1,10 @@
 
-$inter-stack: Inter, Helvetica Neue, Helvetica Neue Light, Arial, Sans-Serif;
+$inter-stack: Inter, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 $playfair-stack: 'Playfair Display', Baskerville, 'Times New Roman', Times Serif;
+
+.padded-text {
+    padding-bottom: 1em;
+}
 
 ul {
     margin: 5px 0;
@@ -38,7 +42,7 @@ p {
 }
 
 a {
-    color: $font-color-primary-light;;//$link-color;
+    color: $font-color-primary-light; //$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-decoration-color: $blend-color;
@@ -62,6 +66,7 @@ h1 {
     font-weight: 600;
     //letter-spacing: -0.01em;
     padding-bottom: 20px;
+    line-height: 1.2em;
 
     @include for-desktop-up {
         font-size: 29pt;
@@ -71,9 +76,10 @@ h1 {
 h2 {
     font-family: $playfair-stack;//$inter-stack;
     font-size: 25pt;
-    font-weight: 700;//100;
+    font-weight: 700; //100;
     //letter-spacing: -0.03em;
     padding-bottom: 10px;
+    line-height: 1.5em;
 
     @include for-desktop-up {
        font-size: 26pt;
@@ -84,12 +90,13 @@ h2 {
 h3 {
     color: $font-color-primary-light;
     font-family: $inter-stack;
-    font-size: 10pt;
-    font-weight: 400;
-    //letter-spacing: -0.01em;
+    font-size: 20pt;
+    font-weight: 100;
+    line-height: 1.2em;
+   
 
     @include for-desktop-up {
-      //  font-size: 15pt;
+      //  font-size: 21pt;
     }
 }
 
