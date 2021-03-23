@@ -16,13 +16,4 @@ I am currently completing an IT internship as part of my education at [IMS Basel
 
 In my free time, I like to play the bass and guitar. Additionally, I have a keen interest in watches, vinyl and mechanical keyboards.
 
-{{% section %}}
-
-## Curriculum Vitae
-### Informatikmittelschule Basel
-- Test
-- Test
-
-{{% /section %}}
-
 *Disclaimer: Views expressed here are not supported by any university, company or organization.*
