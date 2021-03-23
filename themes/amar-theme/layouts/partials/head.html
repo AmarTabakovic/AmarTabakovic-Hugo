@@ -1,8 +1,8 @@
 <head class="no-js">
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  <!--<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>-->
 
   {{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
-
+  <style>body{visibility:hidden;}</style>
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
   
     <meta charset="utf-8">
@@ -48,8 +48,6 @@
 
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
-
-
 
     {{ $webfont := resources.Get "/css/fontello.css" | resources.Minify | resources.Fingerprint  }}
 
