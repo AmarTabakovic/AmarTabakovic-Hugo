@@ -19,7 +19,7 @@
 #nav {
     display: flex;
 
-    * {
+    .nav-link {
         padding-left: 25px;
         @include for-phone-only {
             padding-left:10px;

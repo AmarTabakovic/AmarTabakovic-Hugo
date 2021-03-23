@@ -1,8 +1,7 @@
-<head class="no-js">
-  <!--<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>-->
+<head>
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
 
   {{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
-  <style>body{visibility:hidden;}</style>
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
   
     <meta charset="utf-8">
