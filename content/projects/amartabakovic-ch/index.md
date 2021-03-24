@@ -6,6 +6,10 @@ author: "Amar Tabakovic"
 featured_image: "images/thumb.jpeg"
 category: "Web Development"
 description: "My personal website."
+keywords:
+- "Personal"
+- "Site"
+- "Amar"
 ---
 {{% section %}}
 

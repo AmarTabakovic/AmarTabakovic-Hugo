@@ -18,6 +18,7 @@
 
 #nav {
     display: flex;
+    z-index: 3;
 
     .nav-link {
         padding-left: 25px;
