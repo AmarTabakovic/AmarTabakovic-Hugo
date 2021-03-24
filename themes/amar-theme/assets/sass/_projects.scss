@@ -28,7 +28,13 @@
 
 .project-thumb {
     width: 100%;
+
+    &.project-page {
+        padding-bottom: 40px;
+    }
 }
+
+
 
 .project-thumb-wrapper {
     max-width: 400px;

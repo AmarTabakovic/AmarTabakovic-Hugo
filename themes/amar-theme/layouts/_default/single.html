@@ -12,7 +12,6 @@
     {{- if $i -}}, {{ end -}}
     {{ $href := print (absURL "categories/") (urlize .) }}
     <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-
     
     {{- end -}}
     •
