@@ -1,11 +1,11 @@
 .project-element {
     display: flex;
-    padding-bottom: 136px;
+    margin-bottom: 136px;
     
 
     @include for-phone-only {
         flex-direction: column;
-        padding-bottom: 10vh;
+        margin-bottom: 10vh;
     }
 }
 
