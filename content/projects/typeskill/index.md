@@ -9,3 +9,12 @@ description: "A minimalistic type speed practicing website with a live WPM count
 keywords:
 - "Test"
 ---
+
+You can visit the project [here](https://main.d3l8q6oy8lf4vc.amplifyapp.com/).
+
+**Technologies used:**
+- Vue.js
+- HTML
+- CSS
+
+**Hosted on:** AWS Amplify
