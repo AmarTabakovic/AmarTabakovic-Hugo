@@ -1,5 +1,5 @@
 ---
-title: "First Post"
+title: "First post"
 date: 2021-03-17T15:11:13+01:00
 draft: false
 description: "This post is just for testing purposes."

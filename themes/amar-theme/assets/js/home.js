@@ -1,5 +1,3 @@
-
-
 var toggle = document.getElementById("dark-mode-toggle");
 
 toggle.addEventListener("click", () => {
