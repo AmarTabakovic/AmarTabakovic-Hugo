@@ -17,6 +17,8 @@ canonifyURLs = true
   github = "https://github.com/amartabakovic"
   sitename = "Amar Tabakovic"
   twitter = "@AmarrrrrT"
+  description = "Personal site of Amar Tabakovic."
+  images = ["static/favicon.png"]
 
 [markup]
   [markup.goldmark]
