@@ -28,12 +28,17 @@ body {
 #content {
     padding-top: 50px;
     padding-bottom: 80px;
-    //padding-left: $side-page-padding;
-    //padding-right: $side-page-padding;
+
+    //COMMENT OUT BELOW
+    //max-width:690px;
 }
 
 .wrapper {
-    max-width: calc(878px - (2 * #{$side-page-padding}));
+    //max-width: calc(878px - (2 * #{$side-page-padding}));
+
+    max-width: calc(738px - (2 * #{$side-page-padding}));
+
+    //max-width: calc(100vw - (2 * #{$side-page-padding}));
     width:  calc(100% - (2 * #{$side-page-padding}));
     padding-left: $side-page-padding;
     padding-right: $side-page-padding;

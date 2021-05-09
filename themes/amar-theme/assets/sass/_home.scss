@@ -4,7 +4,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: calc(90vh - #{$header-height} - #{$footer-height});
+    height: calc(100vh - #{$header-height} - #{$footer-height} - 105px);
     margin-top: -50px;
     
 }

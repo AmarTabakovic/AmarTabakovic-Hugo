@@ -24,6 +24,10 @@
     <meta property="og:description" content="{{ .Params.description }}" />
     <meta name="twitter:description" content="{{ .Params.description }}" />
 
+    <meta property="og:image" content="{{ "favicon.png" | relURL }}">
+    <meta name="twitter:image" content="{{ "favicon.png" | relURL }}">
+    <meta name="twitter:card" content="Amar Tabakovic">
+
     <base href="{{ .Permalink }}">
     <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
     <meta name="url" content="{{ .Permalink }}" />

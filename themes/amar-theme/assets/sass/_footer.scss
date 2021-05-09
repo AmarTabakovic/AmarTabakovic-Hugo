@@ -1,7 +1,8 @@
 footer {
-    bottom: 0;
+    bottom: 0 !important;
     height: $footer-height;
-    position: fixed;
+    margin-top: auto;
+    position: relative;
     background-color: $bg-color-primary-light;
     display: flex;
     align-items: center;

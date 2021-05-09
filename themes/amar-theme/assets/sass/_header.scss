@@ -2,17 +2,11 @@
     display: flex;
     justify-content: space-between;
     height: $header-height;
-    //align-items: center;
     margin-top: 15px;
-
     color: $font-color-primary-light;
-    
 
     a {
         text-decoration: none;
-        /*&:hover {
-            text-decoration: underline;  //@include hover-color($font-color-light);
-        }*/
     }
 }
 
@@ -22,17 +16,18 @@
 
     .nav-link {
         padding-left: 25px;
+
         @include for-phone-only {
-            padding-left:10px;
+            padding-left: 10px;
         }
-        
+
     }
 
-    @media screen and (max-width: 331px){
+    @media screen and (max-width: 331px) {
         flex-direction: column;
         text-align: right;
     }
-    
+
 }
 
 #header-title {

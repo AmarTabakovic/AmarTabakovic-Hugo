@@ -15,7 +15,7 @@
     @media (min-width: 1800px) { @content; }
   }
 
-//Hover colors
+//Hover color
 @mixin hover-color($color) {
     color: darken($color, 15%);
 }

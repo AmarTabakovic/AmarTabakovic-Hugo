@@ -1,8 +1,11 @@
 {{ define "main" }}
 <div id="home">
+  {{ $diff := now.Sub (time "2002-03-07") }}
+  {{ $years := div (div $diff.Hours 24) 365 }}
+  {{ $years := math.Floor $years }}
 
   <h1 class="padded-text">Hi, I'm <span id="dark-mode-toggle" class="highlight-ata">Amar</span>.</h1>
-  <p>I'm 19 years old and based in <a href="https://en.wikipedia.org/wiki/Basel">Basel, Switzerland</a>.</p>
+  <p>I'm {{ $years }} years old and based in <a href="https://en.wikipedia.org/wiki/Basel">Basel, Switzerland</a>.</p>
  
 </div>
 {{ $built := resources.Get "js/home.js" | resources.Minify }}

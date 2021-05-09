@@ -1,24 +1,50 @@
-
-$inter-stack: Inter, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
-$playfair-stack: 'Playfair Display', Baskerville, 'Times New Roman', Times Serif;
+$inter-stack: Inter,
+'Helvetica Neue',
+Helvetica,
+Arial,
+Sans-Serif;
+$playfair-stack: 'Playfair Display',
+Baskerville,
+'Times New Roman',
+Times Serif;
 
 .padded-text {
     padding-bottom: 1em;
 }
 
 ul {
-    margin: 5px 0;
-    padding-bottom: 10px;
+    //margin: 5px 0;
+    //padding-bottom: 10px;
 }
 
-p, h1, h2, h3, h4, h5, a, span, li, strong {
+li {
+    //margin: 5px 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+span,
+li,
+strong {
     font-family: $inter-stack;
     line-height: 1.5em;
 }
 
-p, h1, h2, h3, strong, li {
-    color: $font-color-primary-light;;
-    
+p,
+h1,
+h2,
+h3,
+strong,
+span,
+li {
+    color: $font-color-primary-light;
+    ;
+
 }
 
 .highlight-ata {
@@ -26,7 +52,7 @@ p, h1, h2, h3, strong, li {
 
     color: $bg-color-primary-light;
     background-color: $font-color-primary-light;
-    
+
     &:hover {
         cursor: pointer;
     }
@@ -46,73 +72,65 @@ a {
     color: $font-color-primary-light; //$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    text-decoration-color: $blend-color;
+    //text-decoration-color: $blend-color;
 }
 
-p, a, li {
+p,
+a,
+li,
+span {
     font-family: $inter-stack;
     //letter-spacing: -0.06em;
     font-weight: 300;
     font-size: 12pt;
 
 
-    @include for-desktop-up {
-        //font-size: 13pt;
-    }
 }
 
 h1 {
     font-family: $inter-stack;
-    font-size: 28pt; //25pt;
+    font-size: 28pt;
     font-weight: 600;
-    //letter-spacing: -0.01em;
+
     padding: 1em 0;
     line-height: 1.2em;
 
-    @include for-desktop-up {
-        //font-size: 29pt;
-    }
+
 }
 
 h2 {
-    font-family: $playfair-stack;//$inter-stack;
+    font-family: $playfair-stack;
     font-size: 25pt;
-    font-weight: 700; //100;
-    //letter-spacing: -0.03em;
+    font-weight: 700;
+
     padding: 10px 0;
     line-height: 1.5em;
 
-    @include for-desktop-up {
-       //font-size: 26pt;
-    }
+
 
 }
 
 h3 {
     color: $font-color-primary-light;
     font-family: $inter-stack;
-    font-size: 20pt;
-    font-weight: 100;
+    font-size: 19pt;
+    font-weight: 600;
     line-height: 1.2em;
     padding: 12px 0;
-   
 
-    @include for-desktop-up {
-      //  font-size: 21pt;
-    }
+
+
 }
 
 h4 {
     color: $font-color-primary-light;
-    font-family: $playfair-stack; //$inter-stack;
+    font-family: $playfair-stack;
     padding: 7px 0;
     font-weight: 700;
     font-size: 16pt;
     margin: 0;
 
-    @include for-desktop-up {
-        //font-size: 13pt;
-    }
+
 }
 
 h5 {
@@ -122,9 +140,6 @@ h5 {
     font-size: 12pt;
     margin: 0;
 
-    @include for-desktop-up {
-        //font-size: 13pt;
-    }
 }
 
 .padded-text {
@@ -140,31 +155,31 @@ blockquote {
     padding-left: 15px;
     margin-bottom: 1.5em;
     font-style: italic;
- }
+}
 
 .highlight {
     border-radius: 9px;
-    border-collapse: separate; 
+    border-collapse: separate;
     overflow: hidden;
     perspective: 1px;
     margin-bottom: 20px;
-    //overflow: scroll;
+
 
     pre {
         overflow: scroll !important;
-        
+
 
         &::-webkit-scrollbar {
             display: none;
             width: 0px;
-            background: transparent; /* make scrollbar transparent */
+            background: transparent;
         }
     }
 
     &::-webkit-scrollbar {
         display: none;
         width: 0px;
-        background: transparent; /* make scrollbar transparent */
+        background: transparent;
     }
 }
 
@@ -172,28 +187,36 @@ blockquote {
 
 pre {
     padding: 25px;
-    border-radius: 13px;
+    border-radius: $border-radius;
     overflow: scroll !important;
-    //font-size: 10pt;
-    //line-height: 1.5em;
-    
-    * {
-       // font-size: 10pt;
-       // line-height: 1.5em;
-       // margin: 0;
-    }
-    
+
+
 }
+
 code {
     font-size: 10pt;
     line-height: 1.5em;
-    
+
     * {
         font-size: 10pt;
         line-height: 1.5em;
     }
 
-    font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+    font-family: monospace,
+    Consolas,
+    "Andale Mono WT",
+    "Andale Mono",
+    "Lucida Console",
+    "Lucida Sans Typewriter",
+    "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono",
+    "Liberation Mono",
+    "Nimbus Mono L",
+    Monaco,
+    "Courier New",
+    Courier,
+    monospace !important;
+
     * {
         font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     }

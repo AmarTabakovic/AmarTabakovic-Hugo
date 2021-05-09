@@ -1,19 +1,26 @@
 {{ define "main" }}
+<div id="blog-page">
 {{ $time := .ReadingTime }}
 <h1>{{ .Title }}</h1>
+
+{{ if isset .Params "outdated" }}
+<div id="outdated">
+    <p>Warning: This article is <b>outdated</b>. Certain details might not be up to date.</p>
+</div>
+{{ end }}
+
 <p>{{ .Params.Description }}</p>
 <br>
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "January 2, 2006" }}
 
 <p class="blog-time"><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
-    • 
+    •
     {{ range $i, $e := .Params.categories -}}
     {{- if $i -}}, {{ end -}}
     {{ $href := print (absURL "categories/") (urlize .) }}
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>&nbsp
 
-    
     {{- end -}}
     •
     {{ $time }} min
@@ -21,5 +28,40 @@
 </p>
 
 
+
+
 {{ .Content }}
+
+</div>
+
+{{ $title := .Title }}
+{{ $url := printf "%s" .Permalink | absLangURL }}
+{{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+
+<div id="social-icons-list">
+    <span><b>Share</b></span><br>
+    <div id="social-icons">
+        <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}"><i class="icon-twitter"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u={{ $url }}"><i class="icon-facebook-official"></i></a>
+        <a href=""><i class="icon-linkedin"></i></a>
+    </div>
+</div>
+
+<div class="">
+    <span><b>Continue reading</b></span>
+    <div class="next-post">
+        {{ if .NextInSection }}
+        <span>Next: </span><a class="link-reverse" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title | truncate 50 "..." }}</a>
+        {{ end }}
+    </div>
+
+    <div class="previous-post">
+        {{ if .PrevInSection }}
+        <span>Previous: </span><a class="link-reverse" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title | truncate 50 "..."}}</a>
+        {{ end }}
+    </div>
+</div>
+
+
+
 {{ end }}

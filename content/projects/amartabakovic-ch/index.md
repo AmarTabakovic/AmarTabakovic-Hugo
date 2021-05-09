@@ -29,6 +29,10 @@ For a while now, I wanted to create a personal website. I originally envisioned 
 
 An important part of this site is the look and feel.
 
+### SCSS
+
+The styling of this site is written in SCSS.
+
 ### Two tone color scheme
 
 I have decided to go with a simple two tone color scheme, consisting of the following colors:
@@ -46,9 +50,9 @@ For the fonts, I used [Playfair Display](https://fonts.google.com/specimen/Playf
 
 {{% section %}}
 
-## Fast build times
+## Static site building
 
-A main advantage of using Hugo is its incredibly fast build speeds. 
+The main advantage of using Hugo is its incredibly fast build speeds. It compiles markdown files to HTML files, which can then be served statically. There is no need for a database like MySQL to serve the content from a server, which also increases the security, since there is no exploitable system.
 
 {{% /section %}}
 

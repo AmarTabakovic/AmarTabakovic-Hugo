@@ -1,24 +1,24 @@
 //Colors
-$navy: rgb(4, 23, 59);//#000118;
+$navy: rgb(4, 23, 59);
 $yellow: #FFF28B;
 $red: #f54b4b;
 $white: #ffffff;
 $off-white: rgb(173, 173, 173);
-$grey: rgb(130,139,157); 
+$grey: rgb(130, 139, 157);
 
 //Color schemes
 
-//Light
-$bg-color-primary-light: $white;//$navy;
-$font-color-primary-light: $navy;//$white;
+//Light theme
+$bg-color-primary-light: $white;
+$font-color-primary-light: $navy;
 
-//Dark
+//Dark theme
 $bg-color-primary-dark: $navy;
 $font-color-primary-dark: $white;
 
 $blend-color: $grey;
 
-$link-color: $navy;//$red;
+$link-color: $navy;
 
 $popout-color: $yellow;
 
@@ -34,4 +34,6 @@ $rect-height: 250px;
 $rect-width: 320px;
 
 //Paddings
-$side-page-padding: 10px;  //$side-page-padding: 200px;
+$side-page-padding: 10px;
+
+$border-radius: 10px;

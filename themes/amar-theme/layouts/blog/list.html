@@ -8,7 +8,6 @@
 </p>
 
 <div id="blog-list">
-   
 
     {{ range .Pages.ByPublishDate.Reverse }}
     {{ $time := .ReadingTime }}
@@ -29,10 +28,8 @@
                     {{ $time }} min
                   
                 </p>
-               
-                
-                
-                <h2>{{ .Title }}</h2>
+                    
+                <h2 class="blog-title">{{ .Title }}</h2>
         </div>
     </div>
     </a>
