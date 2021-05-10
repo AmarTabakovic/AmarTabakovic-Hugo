@@ -13,12 +13,12 @@ keywords:
 ---
 {{% section %}}
 
-For a while now, I wanted to create a personal website. I originally envisioned to develop it in plain HTML and CSS, then in Webpack and JS, afterwards in Vue.js and now I've decided once and for all to use Hugo.
+For a while now, I wanted to create a personal website. I originally envisioned to develop it in plain HTML and CSS, then in Webpack and JS, afterwards in Vue.js and now I've decided once and for all to use something called **Hugo**.
 
 ## Tech
 The website is mainly powered by the static site generator [Hugo](https://gohugo.io), which compiles markdown into HTML files. Hugo allows for fast compilation times and lightweight websites.
 
-The styling is done with [Sass](https://sass-lang.com/).
+The styling is done with [Sass](https://sass-lang.com/) and [Fontello](https://fontello.com/) is used for icons.
 
 I deployed this site on [Amazon AWS](https://aws.amazon.com/), because I wanted to learn a bit more about cloud and saw this as a good opportunity.
 
@@ -29,7 +29,7 @@ I have decided to go with a simple two tone color scheme, consisting of the foll
 
 This site includes a dark mode. If you want to learn more about my implementation, you can read [my blog post about it](https://amartabakovic.ch/blog/hugo-dark-theme).
 
-The fonts I used were [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?preview.text_type=custom) and [Inter](https://fonts.google.com/specimen/Inter?preview.text_type=custom), both of which are available from [Google Fonts](https://fonts.google.com/).
+The fonts I used here are [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?preview.text_type=custom) and [Inter](https://fonts.google.com/specimen/Inter?preview.text_type=custom), both of which are available from [Google Fonts](https://fonts.google.com/).
 
 {{% /section %}}
 

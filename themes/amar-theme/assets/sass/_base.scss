@@ -54,3 +54,11 @@ body {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
+
+img {
+    @media screen and (min-width: 600px) and (max-width: 750px) {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(#{$side-page-padding} * -2);
+    }
+}
