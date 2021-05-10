@@ -11,6 +11,8 @@ keywords:
 - "Code snippets"
 - "Word Code Snippets"
 ---
+{{% section %}}
+
 > Create and share beautiful images of your source code.
 > Start typing or drop a file into the text area to get started.
 
@@ -21,3 +23,5 @@ keywords:
 ![Carbon code snippet 2](imgs/carbon-2.png)
 
 Compared to creating a screenshot of the code editor or copying the code and pasting it into a Word OpenDocument object, this is much easier and aesthetically more pleasant (atleast in my opinion). 
+
+{{% /section %}}
