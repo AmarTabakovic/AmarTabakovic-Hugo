@@ -14,7 +14,7 @@ keywords:
 > Create and share beautiful images of your source code.
 > Start typing or drop a file into the text area to get started.
 
-[Carbon](https://carbon.now.sh) is a web based code snippet creator, which you can use to create screenshots of your source code. Carbon supports syntax highlighting for over 60 languages and is highly customizable.
+[Carbon](https://carbon.now.sh) is a web-based code snippet generator, which you can use to create screenshots of your source code. Carbon supports syntax highlighting for over 60 languages and is highly customizable.
 
 ![Carbon code snippet](imgs/carbon.png)
 
