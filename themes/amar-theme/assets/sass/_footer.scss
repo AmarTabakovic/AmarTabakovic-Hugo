@@ -4,26 +4,21 @@ footer {
     margin-top: auto;
     position: relative;
     background-color: $bg-color-primary-light;
-    display: flex;
-    align-items: center;
+    text-align: center;
     //justify-content: center;
     width: 100%;
     justify-content: space-between;
 
-    @media screen and (max-width: 390px)  {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: $footer-height + 30px;
-    }
 }
 
 #footer-logos {
+    width: 100%;
     display: flex;
-    width: 170px;
-    justify-content: space-around;
+    justify-content: center;
+}
 
-    @include for-phone-only {
-        width: 140px;
-    }
-    
+#footer-logos-inner  {
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
 }

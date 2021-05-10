@@ -8,7 +8,6 @@
 </p>
 
 <div id="blog-list">
-   
 
     {{ range .Pages.ByPublishDate.Reverse }}
     {{ $time := .ReadingTime }}
@@ -24,18 +23,13 @@
         </div>
         <div>
             <p class="no-margin">
-                    {{ range $i, $e := .Params.categories -}}
-                    {{- if $i -}}, {{ end -}}
-                    {{ . }}
-                    {{- end -}}
+                    {{ delimit (.Params.categories) ", " }}
                     •
                     {{ $time }} min
                   
                 </p>
-               
-                
-                
-                <h2>{{ .Title }}</h2>
+                    
+                <h2 class="blog-title">{{ .Title }}</h2>
         </div>
     </div>
     </a>
@@ -49,3 +43,4 @@
 
 
 {{ end }}
+

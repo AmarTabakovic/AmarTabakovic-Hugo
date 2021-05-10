@@ -72,6 +72,7 @@ a {
     color: $font-color-primary-light; //$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
     //text-decoration-color: $blend-color;
 }
 
@@ -221,3 +222,4 @@ code {
         font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
     }
 }
+
