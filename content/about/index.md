@@ -16,6 +16,6 @@ I am currently completing an IT internship as part of my education at [IMS Basel
 
 In my free time, I like to play the bass and guitar. Additionally, I have a keen interest in watches, vinyl and mechanical keyboards.
 
-[What I use.](http://localhost:1313/uses)
+[What I use.](https://amartabakovic.ch/uses)
 
 *Disclaimer: Views expressed here are not supported by any university, company or organization.*
