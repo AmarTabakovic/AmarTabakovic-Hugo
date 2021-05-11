@@ -46,10 +46,14 @@ canonifyURLs = true
     name = "Blog"
     url = "/blog/"
     weight = 2
+  # [[menu.main]]
+  #  name = "Uses"
+  # url = "/uses/"
+  #  weight = 3
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
  
    
     
