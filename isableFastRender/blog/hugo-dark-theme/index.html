@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+  
+  <script type="text/javascript" src="http://localhost:1313/js/toggleDarkTheme.min.js" defer></script>
+  <script async data-no-cookie src="https://cdn.splitbee.io/sb.js"></script>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="" />
+<meta property="og:article:published_time" content=2021-03-21T22:17:02&#43;0100 />
+<meta property="article:published_time" content=2021-03-21T22:17:02&#43;0100 />
+
+
+  <meta property="og:article:author" content="Amar tabakovic" />
+  <meta property="article:author" content="Amar tabakovic" />
+  <meta name="author" content="Amar tabakovic" />
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http:\/\/localhost:1313\/"
+        },
+        "articleSection" : "blog",
+        "name" : "Dark mode in Hugo with SCSS",
+        "headline" : "Dark mode in Hugo with SCSS",
+        
+        "description" : "My implementation of a dark mode in Hugo.",
+        "inLanguage" : "en",
+        "author" : "Amar Tabakovic",
+        "creator" : "Amar Tabakovic",
+        "publisher": "Amar Tabakovic",
+        "accountablePerson" : "Amar Tabakovic",
+        "copyrightHolder" : "Amar Tabakovic",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-03-21 22:17:02 \u002b0100 CET",
+        "dateModified" : "2021-03-21 22:17:02 \u002b0100 CET",
+        "url" : "http:\/\/localhost:1313\/blog\/hugo-dark-theme\/",
+        "wordCount" : "484",
+        "keywords" : [ "hugo","dark","theme","mode","scss","Blog" ]
+    }
+    </script>
+
+
+
+
+
+
+
+    
+    
+
+    <title itemprop="name">Dark mode in Hugo with SCSS | Amar Tabakovic</title>
+    <meta property="og:title" content="Dark mode in Hugo with SCSS | Amar Tabakovic" />
+    <meta name="twitter:title" content="Dark mode in Hugo with SCSS | Amar Tabakovic" />
+    <meta itemprop="name" content="Dark mode in Hugo with SCSS | Amar Tabakovic" />
+    <meta name="application-name" content="Dark mode in Hugo with SCSS | Amar Tabakovic" />
+    <meta property="og:site_name" content="Amar Tabakovic" />
+
+    <meta name="description" content="My implementation of a dark mode in Hugo." />
+    <meta itemprop="description" content="My implementation of a dark mode in Hugo." />
+    <meta property="og:description" content="My implementation of a dark mode in Hugo." />
+    <meta name="twitter:description" content="My implementation of a dark mode in Hugo." />
+
+    <meta property="og:image" content="/favicon.png">
+    <meta name="twitter:image" content="/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="twitter:creator" content="@AmarrrrrT">
+
+    <base href="http://localhost:1313/blog/hugo-dark-theme/">
+    <link rel="canonical" href="http://localhost:1313/blog/hugo-dark-theme/" itemprop="url" /> 
+    <meta name="url" content="http://localhost:1313/blog/hugo-dark-theme/" />
+    <meta name="twitter:url" content="http://localhost:1313/blog/hugo-dark-theme/" /> 
+    <meta property="og:url" content="http://localhost:1313/blog/hugo-dark-theme/" />
+
+    <meta property="og:locale" content="en" />
+    <meta name="language" content="" />
+
+    <meta property="og:updated_time" content=2021-03-24T12:45:31&#43;0100 />
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href='http://localhost:1313/sitemap.xml' />
+
+    <meta name="keywords" content=[hugo&#32;dark&#32;theme&#32;mode&#32;scss] >
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/favicon.png">
+
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313/sass/main.min.7f97337c09f7df332945614013089de2e7092e840c8acf02816ce80712606f2f.css">
+
+    
+
+    <link rel="stylesheet" href="http://localhost:1313/css/fontello.min.31a799208a0beb5f275909f830f4ee2447f693852afa7bc4891b0959ad831169.css" >
+
+    <style type="text/css">
+      .no-js {
+        visibility: hidden;
+        opacity: 0;
+        }
+
+        .js {
+        visibility: visible;
+        opacity: 1;
+        }
+    </style>
+    
+
+
+</head><body><header id="header" class="wrapper">
+    <div>
+    <a id="header-title" href="http://localhost:1313/" >Amar Tabakovic</a>
+    </div>
+    <nav id="nav" class="">
+        
+        <div class="nav-link">
+            <a href="http://localhost:1313/projects/" >
+            
+            Projects
+            </a>
+        </div>
+        
+        <div class="nav-link">
+            <a href="http://localhost:1313/blog/" >
+            
+            Blog
+            </a>
+        </div>
+        
+        <div class="nav-link">
+            <a href="http://localhost:1313/about/" >
+            
+            About
+            </a>
+        </div>
+        
+    </nav>
+</header><div id="content" class="wrapper">
+<div id="blog-page">
+
+<h1>Dark mode in Hugo with SCSS</h1>
+
+
+
+<p>My implementation of a dark mode in Hugo.</p>
+<br>
+
+
+
+<p class="blog-time"><time datetime="2021-03-21">March 21, 2021</time> 
+    •
+    
+    <a class="btn btn-sm btn-outline-dark tag-btn" href="http://localhost:1313/categories/web">Web</a>&nbsp•
+    3 min
+
+</p>
+
+
+
+
+<div style="margin-bottom: 3em">
+<p>Not too long ago, I developed my personal website using the static site generator <a href="https://gohugo.io/">Hugo</a>. While coming up with designs for this website, I was plagued with the choice of implementing it in either a light theme or a dark theme. I liked both variants, so I was very indecisive until I came up with an idea:</p>
+<p><strong>To implement both variants using a light/dark mode toggler.</strong></p>
+<p>And so I did using HTML, SCSS and plain JavaScript.</p>
+</div>
+<div style="margin-bottom: 3em">
+<h2 id="scss">SCSS</h2>
+<p>In the <strong>_variables.scss</strong> file, all Sass variables, including the colors, are defined. In this example I will use the colors black and white.</p>
+<p><strong>_variables.scss:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#0f0">/* --- COLORS --- */</span>
+<span style="color:#eedd82">$white</span>: <span style="color:#f60">#ffffff</span>;
+<span style="color:#eedd82">$black</span>: <span style="color:#f60">#000000</span>;
+
+<span style="color:#0f0">/* --- COLOR STYLING --- */</span>
+<span style="color:#0f0">// Light theme coloring
+</span><span style="color:#0f0"></span><span style="color:#eedd82">$bg-color-primary-light</span>: <span style="color:#eedd82">$white</span>;
+<span style="color:#eedd82">$font-color-primary-light</span>: <span style="color:#eedd82">$black</span>;
+
+<span style="color:#0f0">// Dark theme coloring
+</span><span style="color:#0f0"></span><span style="color:#eedd82">$bg-color-primary-dark</span>: <span style="color:#eedd82">$black</span>;
+<span style="color:#eedd82">$font-color-primary-dark</span>: <span style="color:#eedd82">$white</span>;
+</code></pre></div><p>For this example, I will set the base colors in <strong>_base.html</strong> in the <em>body</em> element. You can of course add more classes to your liking.</p>
+<p><strong>_example.scss:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">body {
+    background-color: $bg-color-primary-light;
+    color: $font-color-primary-light;
+}
+</code></pre></div><p>In the <strong>_dark.scss</strong> file, I&rsquo;ve defined the rules for the dark theme.</p>
+<p><strong>_dark.scss:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">.dark-theme {
+    background-color: $bg-color-primary-dark;
+    color: $font-solor-primary-dark;
+}
+</code></pre></div></div>
+<div style="margin-bottom: 3em">
+<h2 id="html">HTML</h2>
+<p>After having defined the styling with SCSS, it was time to implement the toggle in HTML and JS. From here on, some parts of the implementation are taken from <a href="https://radu-matei.com/blog/dark-mode/">this great article by Radu Matei</a>.</p>
+<p>For this example, I will implement the toggle in the index page, just like I did with this website. However, the same can be done in e.g. <em>header.html</em>. The toggle will be a <em>span</em> element.</p>
+<p><strong>index.html:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;span id=<span style="color:#87ceeb">&#34;dark-mode-toggle&#34;</span>&gt;Click me!&lt;/span&gt;
+</code></pre></div></div>
+<div style="margin-bottom: 3em">
+<h2 id="javascript">JavaScript</h2>
+<p>The <strong>main.js</strong> file is included in the <strong>baseof.html</strong> partial. The function <em>setTheme</em> takes &ldquo;dark&rdquo; or &ldquo;light&rdquo; as a parameter and adds/removes the CSS class <em>dark-theme</em> from the <em>body</em> element, depending on what was given as the parameter.</p>
+<p>Additionally, the parameter value is saved in local storage, so that the selected theme persists across different pages. If there is no value found in local storage, an empty string will be used.</p>
+<p><strong>main.js:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f00">function</span> setTheme(mode) {
+    localStorage.setItem(<span style="color:#87ceeb">&#34;dark-mode-storage&#34;</span>, mode);
+
+    <span style="color:#f00">if</span>(mode == <span style="color:#87ceeb">&#34;dark&#34;</span>) {
+        document.body.classList += <span style="color:#87ceeb">&#34; dark-theme&#34;</span>;
+    }
+    <span style="color:#f00">else</span> <span style="color:#f00">if</span>(mode == <span style="color:#87ceeb">&#34;light&#34;</span>) {
+        document.body.classList -= <span style="color:#87ceeb">&#34; dark-theme&#34;</span>;
+    }
+}
+
+<span style="color:#f00">var</span> savedTheme = localStorage.getItem(<span style="color:#87ceeb">&#34;dark-mode-storage&#34;</span>) || <span style="color:#87ceeb">&#34;&#34;</span>;
+setTheme(savedTheme);
+</code></pre></div><p>The <strong>toggleDarkTheme.js</strong> file gets included in <strong>index.html</strong>. This file is responsible for catching the event from clicking on the toggle. The function <em>setTheme</em> gets called with &ldquo;light&rdquo; or &ldquo;dark&rdquo; as the parameter, depending on whether the <em>body</em> element has the class <em>dark-theme</em>.</p>
+<p><strong>toggleDarkTheme.js:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f00">var</span> toggle = document.getElementById(<span style="color:#87ceeb">&#34;dark-mode-toggle&#34;</span>);
+
+toggle.addEventListener(<span style="color:#87ceeb">&#34;click&#34;</span>, () =&gt; {
+    <span style="color:#f00">if</span> (document.body.classList.contains(<span style="color:#87ceeb">&#39;dark-theme&#39;</span>)) {
+        setTheme(<span style="color:#87ceeb">&#34;light&#34;</span>);
+    } <span style="color:#f00">else</span> {
+        setTheme(<span style="color:#87ceeb">&#34;dark&#34;</span>);
+    }
+});
+</code></pre></div></div>
+<div style="margin-bottom: 3em">
+<h2 id="outcome">Outcome</h2>
+<p>Despite there being room for improvement with this approach, especially with handling the CSS classes, I am pretty satisfied with the result. It&rsquo;s a neat little feature to have. Overall, there is still plenty of restructuring and improving I&rsquo;ve got left to do for this site, but it&rsquo;s coming along nicely.</p>
+<p>Here&rsquo;s how it looks on my page:</p>
+<p><img src="imgs/amar-site-dark.gif" alt="My site"></p>
+</div>
+
+
+</div>
+
+
+
+
+
+<div id="social-icons-list">
+    <span><b>Share</b></span><br>
+    <div id="social-icons">
+        <a href="http://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fblog%2fhugo-dark-theme%2f&text=Dark%20mode%20in%20Hugo%20with%20SCSS&via="><i class="icon-twitter"></i></a>
+        <a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2fhugo-dark-theme%2f"><i class="icon-facebook-official"></i></a>
+    </div>
+</div>
+
+<div class="">
+    <span><b>Continue reading</b></span>
+    <div class="next-post">
+        
+        <span>Next: </span><a class="link-reverse" href="http://localhost:1313/blog/carbon-for-code-snippets/">Carbon for code screenshots</a>
+        
+    </div>
+
+    <div class="previous-post">
+        
+        <span>Previous: </span><a class="link-reverse" href="http://localhost:1313/blog/first-post/">First post</a>
+        
+    </div>
+</div>
+
+
+
+
+        </div><footer class="wrapper">
+    <div id="footer-logos" style="margin-bottom: 10px;">
+        <div id="footer-logos-inner">
+            <a href="mailto:tabakovicamar1@gmail.com">
+                
+                <i class="icon-mail-alt"></i>
+            </a>
+            <a href="https://linkedin.com/in/amartabakovic">
+                
+                <i class="icon-linkedin"></i>
+            </a>
+            <a href="https://github.com/amartabakovic">
+                
+                <i class="icon-github-circled"></i>
+            </a>
+        </div>
+    
+    </div>
+    <div id="footer-name">
+        <p>
+            ©2021 Amar Tabakovic
+        </p>
+    </div>
+</footer></body>
+
+
+
+
+</html>
