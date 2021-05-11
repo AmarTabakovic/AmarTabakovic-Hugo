@@ -4,15 +4,10 @@ title = "Amar Tabakovic"
 description = "Personal site of Amar Tabakovic."
 theme = "amar-theme"
 
-disableKinds = ["taxonomyTerm"]
-
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 canonifyURLs = true
-
-[Taxonomies]
-  category = "categories"
 
 [Author]  
   name = "Amar Tabakovic"
