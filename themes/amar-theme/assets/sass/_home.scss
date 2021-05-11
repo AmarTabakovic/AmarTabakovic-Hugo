@@ -4,11 +4,11 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - #{$header-height} - #{$footer-height} - 105px);
+    height: calc(100vh - #{$header-height} - #{$footer-height} - 115px);
     margin-top: -50px;
 
     @media screen and (max-width: 390px)  {
-        height: calc(100vh - #{$header-height} - #{$footer-height} - 135px);
+        height: calc(100vh - #{$header-height} - #{$footer-height} - 145px);
     }
     
 }
