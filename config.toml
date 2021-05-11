@@ -9,11 +9,6 @@ enableGitInfo = true
 enableRobotsTXT = true
 canonifyURLs = true
 
-[taxonomies]
-# Disable the default taxonomies
-  tag = ""
-  category = ""
-
 [Author]  
   name = "Amar Tabakovic"
 
