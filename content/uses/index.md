@@ -21,7 +21,7 @@ List of things I use on a regular basis.
 
 ## Editor, Terminal, CLI
 - [Visual Studio Code](https://code.visualstudio.com/) with [Vim plugin](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) installed as my main editor
-- [IntelliJ](https://www.jetbrains.com/de-de/idea/) IDEA for anything Java related
+- [IntelliJ IDEA](https://www.jetbrains.com/de-de/idea/) for anything Java related
 - [Visual Studio](https://visualstudio.microsoft.com/de/) for anything C# related
 - zsh
 - [iTerm2](https://iterm2.com/)

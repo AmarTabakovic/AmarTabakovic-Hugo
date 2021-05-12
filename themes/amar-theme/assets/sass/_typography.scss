@@ -11,6 +11,8 @@ Times Serif;
 
 $inconsolata-stack: 'Inconsolata', monospace;
 
+$fira-stack: 'Fira Code', monospace;
+
 .padded-text {
     padding-bottom: 1em;
 }
@@ -207,18 +209,18 @@ pre {
 }
 
 code {
-    font-size: 10pt;
+    font-size: 11pt;
     line-height: 1.5em;
 
     * {
-        font-size: 10pt;
+        font-size: 11pt;
         line-height: 1.5em;
     }
 
-    font-family: monospace !important;
+    font-family: $fira-stack !important;
 
     * {
-        font-family: monospace !important;
+        font-family: $fira-stack !important;
     }
 }
 

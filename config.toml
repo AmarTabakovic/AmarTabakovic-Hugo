@@ -42,23 +42,7 @@ canonifyURLs = true
     style = "rrt"
     tabWidth = 4
 
-[menu]
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 1
-  [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 2
-  # [[menu.main]]
-  #  name = "Uses"
-  # url = "/uses/"
-  #  weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+
  
    
     
