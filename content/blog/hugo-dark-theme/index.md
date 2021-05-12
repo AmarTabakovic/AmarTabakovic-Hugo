@@ -132,7 +132,8 @@ I am very satisfied with the result. One thing I want to implement further is a 
 
 Here's how it looks on my page:
 
-![My site](imgs/amar-site-dark.gif)
+{{< figure src="imgs/amar-site-dark.gif" title="Dark mode toggler on the start page" >}}
+
 {{% /section %}}
 
 

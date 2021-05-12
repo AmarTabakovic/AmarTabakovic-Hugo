@@ -18,9 +18,9 @@ keywords:
 
 [Carbon](https://carbon.now.sh) is a web-based code snippet generator, which you can use to create screenshots of your source code. Carbon supports syntax highlighting for over 60 languages and is highly customizable.
 
-![Carbon code snippet](imgs/carbon.png)
+{{< figure src="imgs/carbon.png" title="Example I with Laravel" >}}
 
-![Carbon code snippet 2](imgs/carbon-2.png)
+{{< figure src="imgs/carbon-2.png" title="Example II with Vue" >}}
 
 Compared to creating a screenshot of the code editor or copying the code and pasting it into a Word OpenDocument object, this is much easier and aesthetically more pleasant (atleast in my opinion). 
 

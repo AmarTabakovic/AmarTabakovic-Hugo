@@ -19,4 +19,20 @@ footer {
     width: 270px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:600px) {
+        //flex-direction: column;
+        width: 180px;
+    }
+}
+
+#footer-copyright {
+    position:absolute; 
+    bottom:0; 
+    padding-bottom: 10px; 
+
+    * {
+        color: var(--color-secondary);
+    }
+    
 }

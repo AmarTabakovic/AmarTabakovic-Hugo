@@ -58,6 +58,10 @@
         <span>Previous: <a class="link-reverse" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title | truncate 50 "..."}}</a></span>
         {{ end }}
     </div>
+    <div>
+        <br>
+        <span><a href="{{ ref . "blog" }}">All entries...</a></span>
+    </div>
 </div>
 
 
