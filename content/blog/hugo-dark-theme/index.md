@@ -1,7 +1,7 @@
 ---
 title: "Dark mode in Hugo"
 date: 2021-05-11T20:17:02+01:00
-draft: true
+draft: false
 description: "My implementation of a dark mode in Hugo."
 author: "Amar Tabakovic"
 categories: 
