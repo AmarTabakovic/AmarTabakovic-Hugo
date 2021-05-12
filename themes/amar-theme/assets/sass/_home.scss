@@ -1,18 +1,12 @@
 #home {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - #{$header-height} - #{$footer-height} - 115px);
-    margin-top: -50px;
 
-    @media screen and (max-width: 390px)  {
-        height: calc(100vh - #{$header-height} - #{$footer-height} - 145px);
+    @media screen and (min-width: 600px) {
+        h1 {
+            font-size: 35pt;
+        }
+        p {
+            font-size: 17pt;
+            line-height: 2em;
+        }
     }
-    
-}
-
-#cta-home {
-    padding-bottom: 5px;
 }

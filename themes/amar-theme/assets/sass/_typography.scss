@@ -9,6 +9,8 @@ Baskerville,
 'Times New Roman',
 Times Serif;
 
+$inconsolata-stack: 'Inconsolata', monospace;
+
 .padded-text {
     padding-bottom: 1em;
 }
@@ -34,6 +36,10 @@ li,
 strong {
     font-family: $inter-stack;
     line-height: 1.5em;
+
+    a {
+        font-family: inherit;
+    }
 }
 
 p,
@@ -43,16 +49,16 @@ h3,
 strong,
 span,
 li {
-    color: $font-color-primary-light;
-    ;
+    color: var(--color-font-2);
+    
 
 }
 
 .highlight-ata {
     //color: $popout-color;
 
-    color: $bg-color-primary-light;
-    background-color: $font-color-primary-light;
+    color: var(--color-background);
+    background-color: var(--color-font-1);
 
     &:hover {
         cursor: pointer;
@@ -70,7 +76,7 @@ p {
 }
 
 a {
-    color: $font-color-primary-light; //$link-color;
+    color: var(--color-font-1);//$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
@@ -78,34 +84,40 @@ a {
 }
 
 p,
-a,
 li,
 span {
     font-family: $inter-stack;
     //letter-spacing: -0.06em;
     font-weight: 300;
-    font-size: 12pt;
+    font-size: 15pt;
 
+    a {
+        font-size: inherit;
+        font-family: inherit;
+    }
 
 }
 
 h1 {
-    font-family: $inter-stack;
-    font-size: 28pt;
+    color: var(--color-font-1);
+    font-size: 30pt;
     font-weight: 600;
 
-    padding: 1em 0;
+    padding: 2em 0;
     line-height: 1.2em;
 
-
+    @media screen and (max-width: 600px) {
+        padding: 1em 0;
+    }
 }
 
 h2 {
-    font-family: $playfair-stack;
-    font-size: 25pt;
+    font-family: $inter-stack;//$playfair-stack;
+    color: var(--color-font-1);
+    font-size: 24pt;
     font-weight: 700;
 
-    padding: 10px 0;
+    padding: 1.3em 0;
     line-height: 1.5em;
 
 
@@ -113,7 +125,7 @@ h2 {
 }
 
 h3 {
-    color: $font-color-primary-light;
+    color: var(--color-font-1);
     font-family: $inter-stack;
     font-size: 19pt;
     font-weight: 600;
@@ -125,18 +137,17 @@ h3 {
 }
 
 h4 {
-    color: $font-color-primary-light;
-    font-family: $playfair-stack;
-    padding: 7px 0;
-    font-weight: 700;
-    font-size: 16pt;
+    color: var(--color-font-2);
+    font-family: $inconsolata-stack;
+    font-size: 13pt;
     margin: 0;
+    font-weight: normal;
 
 
 }
 
 h5 {
-    color: $font-color-primary-light;
+    color: var(--color-font-2);
     font-family: $inter-stack;
     font-weight: 600;
     font-size: 12pt;
@@ -153,7 +164,7 @@ strong {
 }
 
 blockquote {
-    border-left: 1px solid $blend-color;
+    border-left: 1px solid var(--color-font-1);
     padding-left: 15px;
     margin-bottom: 1.5em;
     font-style: italic;
@@ -204,23 +215,13 @@ code {
         line-height: 1.5em;
     }
 
-    font-family: monospace,
-    Consolas,
-    "Andale Mono WT",
-    "Andale Mono",
-    "Lucida Console",
-    "Lucida Sans Typewriter",
-    "DejaVu Sans Mono",
-    "Bitstream Vera Sans Mono",
-    "Liberation Mono",
-    "Nimbus Mono L",
-    Monaco,
-    "Courier New",
-    Courier,
-    monospace !important;
+    font-family: monospace !important;
 
     * {
-        font-family: monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
+        font-family: monospace !important;
     }
 }
 
+i {
+    font-size: 16pt;
+}

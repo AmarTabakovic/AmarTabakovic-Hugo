@@ -14,23 +14,21 @@
     
     <a href="{{ .RelPermalink }}"> 
     <div class="blog-element">
-        <div class="blog-left">
+        
             {{ $dateTime := .PublishDate.Format "2006-01-02" }}
             {{ $dateFormat := .Site.Params.dateFormat | default "Jan '06" }}
-            <p class="no-margin">
-                <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-            </p>
-        </div>
-        <div>
-            <p class="no-margin">
-                    {{ delimit (.Params.categories) ", " }}
-                    •
-                    {{ $time }} min
-                  
-                </p>
                     
                 <h2 class="blog-title">{{ .Title }}</h2>
-        </div>
+
+                <h4 class="no-margin">
+                    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+                    •
+                        {{ delimit (.Params.categories) ", " }}
+                        •
+                        {{ $time }} min
+                      
+                </h4>
+        
     </div>
     </a>
     

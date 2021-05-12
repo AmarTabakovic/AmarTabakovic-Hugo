@@ -2,35 +2,18 @@
     display: flex;
     justify-content: space-between;
     height: $header-height;
-    margin-top: 15px;
-    color: $font-color-primary-light;
+    align-items: center;
+
+    @media screen and (max-width: 600px){
+        height: calc(#{$header-height} / 2);
+    }
 
     a {
         text-decoration: none;
     }
 }
 
-#nav {
-    display: flex;
-    z-index: 3;
-
-    .nav-link {
-        padding-left: 25px;
-
-        @include for-phone-only {
-            padding-left: 10px;
-        }
-
-    }
-
-    @media screen and (max-width: 380px) {
-        flex-direction: column;
-        text-align: right;
-    }
-
-}
-
 #header-title {
     font-weight: 600;
-    letter-spacing: -0.01em;
+    //letter-spacing: -0.01em;
 }

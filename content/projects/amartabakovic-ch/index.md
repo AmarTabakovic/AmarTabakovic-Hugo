@@ -1,7 +1,7 @@
 ---
 title: "amartabakovic.ch"
 date: 2021-03-17T22:14:11+01:00
-draft: false
+draft: true
 author: "Amar Tabakovic"
 featured_image: "images/thumb.jpeg"
 category: "Web Development"

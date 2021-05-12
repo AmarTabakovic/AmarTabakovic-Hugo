@@ -4,24 +4,39 @@ $yellow: #FFF28B;
 $red: #f54b4b;
 $white: #ffffff;
 $off-white: rgb(173, 173, 173);
-$grey: rgb(130, 139, 157);
+$light-grey: rgb(170, 170, 170);
+$dark-grey: rgb(83, 83, 83);
+$almost-black: rgb(19, 19, 19);
 
-//Color schemes
 $randCol: rgb(random(255), random(255), random(255));
 $randCol2: rgb(random(255), random(255), random(255));
 
-$temp1: #24434d;
-$temp2: #b0cad0;
+// Radius
+$border-radius: 10px;
 
-//Light theme
-$bg-color-primary-light: $white;
-$font-color-primary-light: $navy;
+:root {
+    --color-background: #{$white};
+    --color-secondary: rgb(224, 224, 224);
+    --color-font-1: #{$almost-black};
+    --color-font-2: #{$dark-grey};
+    --side-padding: 120px;
 
-//Dark theme
-$bg-color-primary-dark: $navy;
-$font-color-primary-dark: $white;
+    @media screen and (max-width: 800px) {
+        --side-padding: 40px;
+    }
 
-$blend-color: $grey;
+    @media screen and (max-width: 550px) {
+        --side-padding: 10px;
+    }
+
+}
+
+.dark-theme {
+    --color-background: #{$almost-black};
+    --color-secondary: rgb(37, 37, 37);
+    --color-font-1: #{$white};
+    --color-font-2: #{$light-grey};
+}
 
 //$link-color: $navy;
 
@@ -31,14 +46,9 @@ $popout-color: $yellow;
 $dark-transition: background-color 0.2s linear;
 
 //Sizes
-$header-height: 50px;
+$header-height: 120px;
 
-$footer-height: 75px;
+$footer-height: 200px;
 
 $rect-height: 250px;
 $rect-width: 320px;
-
-//Paddings
-$side-page-padding: 10px;
-
-$border-radius: 10px;

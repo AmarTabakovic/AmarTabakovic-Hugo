@@ -3,21 +3,20 @@ footer {
     height: $footer-height;
     margin-top: auto;
     position: relative;
-    text-align: center;
     //justify-content: center;
     width: 100%;
-    justify-content: space-between;
+    align-items: center;
+    display: flex;
 
 }
 
 #footer-logos {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 #footer-logos-inner  {
-    width: 160px;
+    width: 270px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }

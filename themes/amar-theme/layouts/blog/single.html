@@ -10,22 +10,21 @@
 {{ end }}
 
 <p>{{ .Params.Description }}</p>
-<br>
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "January 2, 2006" }}
 
-<p class="blog-time"><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
+<h4 class="blog-time"><time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time> 
     •
     {{ range $i, $e := .Params.categories -}}
     {{- if $i -}}, {{ end -}}
     {{ $href := print (absURL "categories/") (urlize .) }}
-    <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>&nbsp
+    <a class="" href="{{ $href }}">{{ . }}</a>&nbsp
 
     {{- end -}}
     •
     {{ $time }} min
 
-</p>
+</h4>
 
 
 
@@ -50,13 +49,13 @@
     <span><b>Continue reading</b></span>
     <div class="next-post">
         {{ if .NextInSection }}
-        <span>Next: </span><a class="link-reverse" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title | truncate 50 "..." }}</a>
+        <span>Next: <a class="link-reverse" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title | truncate 50 "..." }}</a></span>
         {{ end }}
     </div>
 
     <div class="previous-post">
         {{ if .PrevInSection }}
-        <span>Previous: </span><a class="link-reverse" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title | truncate 50 "..."}}</a>
+        <span>Previous: <a class="link-reverse" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title | truncate 50 "..."}}</a></span>
         {{ end }}
     </div>
 </div>

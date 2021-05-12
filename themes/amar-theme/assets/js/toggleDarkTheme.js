@@ -4,10 +4,10 @@ function setTheme(mode) {
 
     if (mode == "dark") {
         //darkTheme.disabled = false;
-        document.body.classList += " dark-theme";
+        document.documentElement.classList += " dark-theme";
     }
     else if (mode == "light") {
-        document.body.classList -= " dark-theme";
+        document.documentElement.classList -= " dark-theme";
     }
 }
 

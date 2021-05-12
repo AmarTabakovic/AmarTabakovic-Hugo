@@ -19,7 +19,7 @@ List of things I use on a regular basis.
 
 {{% section %}}
 
-## Editor and Terminal
+## Editor, Terminal, CLI
 - [Visual Studio Code](https://code.visualstudio.com/) with [Vim plugin](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) installed as my main editor
 - [IntelliJ](https://www.jetbrains.com/de-de/idea/) IDEA for anything Java related
 - [Visual Studio](https://visualstudio.microsoft.com/de/) for anything C# related
@@ -28,21 +28,30 @@ List of things I use on a regular basis.
 - [Homebrew](https://brew.sh/) for installing tools and software
 - git
 
-
 {{% /section %}}
 
 
 {{% section %}}
 
-## Software
+## Other software
 - [GitHub](https://github.com) for storing and versioning my source code
 - [Adobe XD](https://www.adobe.com/ch_de/products/xd.html) for designing mockups
 - [Insomnia](https://insomnia.rest/) as an API client
 - [DBngin](https://dbngin.com/) for locally running database instances
 - [DBeaver](https://dbeaver.io/) as a database management client
 - [Google Chrome](https://www.google.com/intl/de/chrome/) as my primary browser
+- Alfred
 - [Spotify](https://www.spotify.com/) for listening to music
 
+
+{{% /section %}}
+
+{{% section %}}
+
+## Platforms and services
+- [Amazon AWS](https://aws.amazon.com)
+- [Netlify](https://netlify.com)
+- [Splitbee](https://splitbee.io)
 
 {{% /section %}}
 
@@ -62,6 +71,6 @@ List of things I use on a regular basis.
 {{% section %}}
 
 ## Code
-C#/ASP.NET, Hugo, JavaScript, Laravel, PHP, Sass/SCSS, MySQL, Node.js, Webpack, Wordpress, Vue
+C#/ASP.NET, Hugo, JavaScript, Laravel, MySQL, Node.js, PHP, Python, Sass/SCSS, Webpack, Wordpress, Vue
 
 {{% /section %}}
