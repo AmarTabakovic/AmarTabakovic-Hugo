@@ -16,13 +16,16 @@ footer {
 }
 
 #footer-logos-inner  {
-    width: 270px;
+    //width: 270px;
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+
+    * {
+        padding-right: 40px;
+    }
 
     @media screen and (max-width:600px) {
-        //flex-direction: column;
-        width: 180px;
+        * { padding-right: 15px;}
     }
 }
 

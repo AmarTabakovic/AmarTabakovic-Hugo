@@ -55,8 +55,14 @@
 
 
 #social-icons {
-    width: 148px;
     display: flex;
-    justify-content: space-between;
     padding-top:10px;
+
+    * {
+        padding-right: 40px;
+    }
+
+    @media screen and (max-width:600px) {
+        * { padding-right: 15px;}
+    }
 }

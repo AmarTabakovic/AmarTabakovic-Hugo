@@ -11,5 +11,6 @@ function setTheme(mode) {
     }
 }
 
-var savedTheme = localStorage.getItem("dark-mode-storage") || "";
+var savedTheme = localStorage.getItem("dark-mode-storage") || '';
+console.log(savedTheme);
 setTheme(savedTheme);

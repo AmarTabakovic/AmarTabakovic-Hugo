@@ -170,6 +170,11 @@ blockquote {
     padding-left: 15px;
     margin-bottom: 1.5em;
     font-style: italic;
+
+    * {
+        color: var(--color-font-1);
+    }
+
 }
 
 .highlight {

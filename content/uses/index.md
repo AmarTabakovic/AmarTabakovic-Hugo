@@ -40,7 +40,7 @@ List of things I use on a regular basis.
 - [DBngin](https://dbngin.com/) for locally running database instances
 - [DBeaver](https://dbeaver.io/) as a database management client
 - [Google Chrome](https://www.google.com/intl/de/chrome/) as my primary browser
-- Alfred
+- [Alfred](https://alfredapp.com) for productivity on Mac
 - [Spotify](https://www.spotify.com/) for listening to music
 
 
@@ -50,8 +50,8 @@ List of things I use on a regular basis.
 
 ## Platforms and services
 - [Amazon AWS](https://aws.amazon.com)
-- [Netlify](https://netlify.com)
-- [Splitbee](https://splitbee.io)
+- [Netlify](https://netlify.com) for static hosting
+- [Splitbee](https://splitbee.io) for analytics
 
 {{% /section %}}
 
