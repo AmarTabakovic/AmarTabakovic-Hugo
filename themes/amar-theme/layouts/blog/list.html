@@ -17,17 +17,19 @@
         
             {{ $dateTime := .PublishDate.Format "2006-01-02" }}
             {{ $dateFormat := .Site.Params.dateFormat | default "Jan '06" }}
+
+            <h4 class="no-margin">
+                <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+                •
+                    {{ delimit (.Params.categories) ", " }}
+                    •
+                    {{ $time }} min
+                  
+            </h4>
                     
                 <h2 class="blog-title">{{ .Title }}</h2>
 
-                <h4 class="no-margin">
-                    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-                    •
-                        {{ delimit (.Params.categories) ", " }}
-                        •
-                        {{ $time }} min
-                      
-                </h4>
+                
         
     </div>
     </a>

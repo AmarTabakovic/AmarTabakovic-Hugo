@@ -14,9 +14,9 @@ keywords:
 
 ---
 {{% section %}}
-Not too long ago, I developed my personal website using the static site generator [Hugo](https://gohugo.io/). While coming up with designs for this website, I was plagued with the choice of implementing it in either a light theme or a dark theme. I liked both variants, so I was very indecisive until I came up with an idea: 
+Not too long ago, I developed my personal website using the static site generator [Hugo](https://gohugo.io/). While coming up with designs for it, I was plagued with the choice of implementing it in either a light theme or a dark theme. I liked both variants, so I was very indecisive until I came up with the following idea: 
 
-**To implement both variants using a light/dark mode toggler.**
+**To implement both variants using a dark mode toggler.**
 
 And so I did using HTML, CSS, SCSS and JavaScript.
 
@@ -26,9 +26,9 @@ And so I did using HTML, CSS, SCSS and JavaScript.
 
 ## SCSS
 
-In the **_variables.scss** file, all Sass and CSS variables, including the colors, are defined. 
+In the **_variables.scss** file, all Sass and CSS variables are defined. 
 
-I originally intended to use Sass variables for storing the themes and using them in other SCSS files, however CSS variables offer much more flexibility for this matter.
+I originally intended to use Sass variables for storing the theme colors and using them in other *.scss* files, however CSS variables offer much more flexibility for this matter.
 
 In this example I will use the colors black and white.
 
@@ -53,7 +53,7 @@ $black: #000000;
 }
 ```
 
-You can then set the CSS variables wherever you like.
+You can then use the CSS variables wherever you like.
 
 **_example.scss:**
 
@@ -73,7 +73,7 @@ p {
 ## HTML
 After having defined the styling with SCSS, it was time to implement the toggle in HTML and JS. From here on, some parts of the implementation are taken from [this great article by Radu Matei](https://radu-matei.com/blog/dark-mode/).
 
-For this example, I will implement the toggle in the index page, just like I did with this website. However, the same can be done in e.g. *header.html*. The toggle will be a *span* element.
+For this example, the toggle will be implemented on the landing page However, the same can be done in e.g. *header.html*. The toggle will be a *span* element.
 
 **index.html:**
 
@@ -85,9 +85,9 @@ For this example, I will implement the toggle in the index page, just like I did
 {{% section %}}
 ## JavaScript
 
-The **main.js** file is included in the **baseof.html** partial. The function *setTheme* takes "dark" or "light" as a parameter and adds/removes the CSS class *dark-theme* from the base *html* element, depending on what was given as the parameter. 
+The **main.js** file is included in the **baseof.html** partial. The function *setTheme* takes "dark" or "light" as a parameter and adds or removes the CSS class *dark-theme* from the base *html* element, depending on what was given as the parameter. 
 
-Additionally, the parameter value is saved in local storage, so that the selected theme persists across different pages. If there is no value found in local storage, an empty string will be used.
+Additionally, the parameter value is saved in local storage, so that the selected theme persists across different pages. If there is no value found in local storage, an empty string is set.
 
 **main.js:**
 

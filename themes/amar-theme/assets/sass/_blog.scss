@@ -8,7 +8,7 @@
 
 .blog-element {
     //border-top: 1px solid var(--color-font-1);
-    padding-bottom: 20px;
+    padding-bottom: 26px;
 
 }
 
@@ -32,22 +32,18 @@
 }
 
 .blog-title {
-    padding-bottom:10px;
+    padding-top: 6px;
+
+    padding-bottom: 20px;
 }
 
 .blog-switcher {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-}
-
-.previous-post {
 
 }
 
-.next-post {
-
-}
 
 #social-icons-list {
     padding-bottom: 30px;
