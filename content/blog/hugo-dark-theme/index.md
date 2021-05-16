@@ -1,5 +1,5 @@
 ---
-title: "Dark mode in Hugo"
+title: "Dark Mode in Hugo"
 date: 2021-05-11T20:17:02+01:00
 draft: false
 description: "My implementation of a dark mode in Hugo."
@@ -85,7 +85,7 @@ For this example, the toggle will be implemented on the landing page However, th
 {{% section %}}
 ## JavaScript
 
-The **main.js** file is included in the **baseof.html** partial. The function *setTheme* takes "dark" or "light" as a parameter and adds or removes the CSS class *dark-theme* from the base *html* element, depending on what was given as the parameter. 
+The **main.js** file gets included in the **baseof.html** partial. The function *setTheme* takes "dark" or "light" as a parameter and adds or removes the CSS class *dark-theme* from the base *html* element, depending on what was given as the parameter. 
 
 Additionally, the parameter value is saved in local storage, so that the selected theme persists across different pages. If there is no value found in local storage, an empty string is set.
 
@@ -132,7 +132,7 @@ I am very satisfied with the result. One thing I want to implement further is a 
 
 Here's how it looks on my page:
 
-{{< figure src="imgs/amar-site-dark.gif" title="Dark mode toggler on the start page" >}}
+{{< figure src="imgs/amar-site-dark.gif" title="Dark mode toggler on the landing page" >}}
 
 {{% /section %}}
 
