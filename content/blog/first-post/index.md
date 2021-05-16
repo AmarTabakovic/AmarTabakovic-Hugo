@@ -1,5 +1,5 @@
 ---
-title: "First post"
+title: "First Post"
 date: 2021-03-17T15:11:13+01:00
 draft: false
 description: "This post is just for testing purposes."
@@ -11,6 +11,7 @@ keywords:
 - "Static"
 - "Testing"
 ---
+{{% section %}}
 
 At this point in time I have no idea what to write about. I'll see what comes out of it.
 
@@ -18,5 +19,6 @@ At this point in time I have no idea what to write about. I'll see what comes ou
 
 \- William Feather
 
+{{% /section %}}
 
 
