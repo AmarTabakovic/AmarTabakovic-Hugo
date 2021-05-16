@@ -19,6 +19,7 @@ $border-radius: 10px;
     --color-secondary: rgb(224, 224, 224);
     --color-font-1: #{$almost-black};
     --color-font-2: #{$dark-grey};
+
     --side-padding: 120px;
 
     @media screen and (max-width: 800px) {
