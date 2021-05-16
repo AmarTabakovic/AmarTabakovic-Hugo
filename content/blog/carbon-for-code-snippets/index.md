@@ -1,5 +1,5 @@
 ---
-title: "Carbon for code screenshots"
+title: "Carbon for Code Screenshots"
 date: 2021-05-09T13:26:34+02:00
 draft: false
 description: "Having trouble creating code snippets for e.g. Microsoft Word or social media? This is where Carbon comes into play."
