@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
 $inter-stack: Inter, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 
 $playfair-stack: "Playfair Display", Baskerville, "Times New Roman", Times Serif;
@@ -8,15 +10,6 @@ $fira-stack: "Fira Code", monospace;
 
 .padded-text {
     padding-bottom: 1.5em;
-}
-
-ul {
-    //margin: 5px 0;
-    //padding-bottom: 10px;
-}
-
-li {
-    //margin: 5px 0;
 }
 
 p,
@@ -105,7 +98,7 @@ h2 {
     font-family: $inter-stack; //$playfair-stack;
     color: var(--color-font-1);
     font-size: 24pt;
-    font-weight: 700;
+    font-weight: 600;
 
     padding: 1.3em 0;
     line-height: 1.5em;
