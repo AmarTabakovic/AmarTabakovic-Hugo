@@ -7,7 +7,6 @@ footer {
     width: 100%;
     align-items: center;
     display: flex;
-
 }
 
 #footer-logos {
@@ -15,7 +14,7 @@ footer {
     display: flex;
 }
 
-#footer-logos-inner  {
+#footer-logos-inner {
     //width: 270px;
     display: flex;
     //justify-content: space-between;
@@ -24,18 +23,19 @@ footer {
         padding-right: 40px;
     }
 
-    @media screen and (max-width:600px) {
-        * { padding-right: 15px;}
+    @media screen and (max-width: 600px) {
+        * {
+            padding-right: 15px;
+        }
     }
 }
 
 #footer-copyright {
-    position:absolute; 
-    bottom:0; 
-    padding-bottom: 10px; 
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
 
     * {
         color: var(--color-secondary);
     }
-    
 }

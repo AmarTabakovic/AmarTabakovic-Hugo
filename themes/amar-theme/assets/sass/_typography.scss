@@ -1,17 +1,10 @@
-$inter-stack: Inter,
-'Helvetica Neue',
-Helvetica,
-Arial,
-Sans-Serif;
+$inter-stack: Inter, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 
-$playfair-stack: 'Playfair Display',
-Baskerville,
-'Times New Roman',
-Times Serif;
+$playfair-stack: "Playfair Display", Baskerville, "Times New Roman", Times Serif;
 
-$inconsolata-stack: 'Inconsolata', monospace;
+$inconsolata-stack: "Inconsolata", monospace;
 
-$fira-stack: 'Fira Code', monospace;
+$fira-stack: "Fira Code", monospace;
 
 .padded-text {
     padding-bottom: 1.5em;
@@ -52,8 +45,6 @@ strong,
 span,
 li {
     color: var(--color-font-2);
-    
-
 }
 
 .highlight-ata {
@@ -65,8 +56,6 @@ li {
     &:hover {
         cursor: pointer;
     }
-
-
 }
 
 p {
@@ -78,7 +67,7 @@ p {
 }
 
 a {
-    color: var(--color-font-1);//$link-color;
+    color: var(--color-font-1); //$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
@@ -97,7 +86,6 @@ span {
         font-size: inherit;
         font-family: inherit;
     }
-
 }
 
 h1 {
@@ -114,16 +102,13 @@ h1 {
 }
 
 h2 {
-    font-family: $inter-stack;//$playfair-stack;
+    font-family: $inter-stack; //$playfair-stack;
     color: var(--color-font-1);
     font-size: 24pt;
     font-weight: 700;
 
     padding: 1.3em 0;
     line-height: 1.5em;
-
-
-
 }
 
 h3 {
@@ -133,9 +118,6 @@ h3 {
     font-weight: 600;
     line-height: 1.2em;
     padding: 12px 0;
-
-
-
 }
 
 h4 {
@@ -144,8 +126,6 @@ h4 {
     font-size: 13pt;
     margin: 0;
     font-weight: normal;
-
-
 }
 
 h5 {
@@ -154,10 +134,7 @@ h5 {
     font-weight: 600;
     font-size: 12pt;
     margin: 0;
-
 }
-
-
 
 strong {
     font-weight: 600;
@@ -173,7 +150,6 @@ blockquote {
     * {
         color: var(--color-font-1);
     }
-
 }
 
 .highlight {
@@ -183,10 +159,8 @@ blockquote {
     perspective: 1px;
     margin-bottom: 20px;
 
-
     pre {
         overflow: scroll !important;
-
 
         &::-webkit-scrollbar {
             display: none;
@@ -202,14 +176,10 @@ blockquote {
     }
 }
 
-
-
 pre {
     padding: 25px;
     border-radius: $border-radius;
     overflow: scroll !important;
-
-
 }
 
 code {

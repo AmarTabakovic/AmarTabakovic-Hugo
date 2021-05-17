@@ -1,7 +1,6 @@
 .project-element {
     display: flex;
     margin-bottom: 136px;
-    
 
     @include for-phone-only {
         flex-direction: column;
@@ -30,8 +29,6 @@
     width: 100%;
 }
 
-
-
 .project-thumb-wrapper {
     max-width: 400px;
 
@@ -47,7 +44,7 @@
     height: 100%;
 }
 
-a:nth-of-type(odd) .project-element{
+a:nth-of-type(odd) .project-element {
     flex-direction: row;
     text-align: right;
 
@@ -63,9 +60,9 @@ a:nth-of-type(odd) .project-element{
         flex-direction: column-reverse;
         text-align: left;
     }
- }
-  
- a:nth-of-type(even) .project-element{
+}
+
+a:nth-of-type(even) .project-element {
     flex-direction: row-reverse;
     text-align: left;
 
@@ -80,16 +77,15 @@ a:nth-of-type(odd) .project-element{
         @include for-phone-only {
             margin-left: 0;
         }
-        
     }
 
     .project-image .project-thumb-wrapper {
         float: right;
     }
- }
+}
 
- .project-list-title {
+.project-list-title {
     @media screen and(min-width: 600px) and (max-width: 738px) {
         font-size: 4.5vw;
     }
- }
+}
