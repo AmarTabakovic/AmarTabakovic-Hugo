@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+  <h1>Vinyl</h1>
+  <p>My vinyl collection.</p>
+  <div id="vinyl-list">
+  </div>
+  <script>
+    const vinylListEl = document.getElementById('vinyl-list')
+    const url='https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
+    const myHeaders = new Headers();
+
+    myHeaders.append('Authorization', 'Discogs key=' + {{ getenv "HUGO_APP_KEY" }} + ', secret=' + {{ getenv "HUGO_APP_SECRET" }})
+
+    fetch(url, {
+      //mode: 'no-cors',
+      headers: myHeaders
+  })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(jsonResponse) {
+      console.log(jsonResponse)
+      createElements(jsonResponse)
+    });
+
+    let createElements = (json) => {
+      for (var i = 0; i < json.releases.length; i++) {
+        console.log(json.releases[i].basic_information.title)
+        let title = json.releases[i].basic_information.title
+        let titleEl = document.createElement("h3")
+        titleEl.innerHTML = title
+
+        let artistNames = []
+        let artists = json.releases[i].basic_information.artists
+        for (var j = 0; j < artists.length; j++) {
+          artistNames.push(artists[j].name)
+        }
+        console.log(artistNames)
+        artist = artistNames.join(", ")
+
+        let artistEl = document.createElement("h4")
+        artistEl.innerHTML = artist
+
+
+        let year = json.releases[i].basic_information.year
+        let yearEl = document.createElement("h4")
+        yearEl.innerHTML = year
+
+
+        let image = json.releases[i].basic_information.cover_image
+        let imageEl = document.createElement("img")
+        imageEl.classList = "vinyl-image"
+        imageEl.src = image
+
+        let vinylEl = document.createElement("div")
+        vinylEl.classList = "vinyl-element"
+
+        let vinylTextEl = document.createElement("div")
+        vinylTextEl.classList = "vinyl-text"
+
+
+        vinylTextEl.append(artistEl)
+        vinylTextEl.append(titleEl)
+        vinylTextEl.append(yearEl)
+
+        vinylEl.append(imageEl)
+        vinylEl.append(vinylTextEl)
+
+        vinylListEl.append(vinylEl)
+
+      }
+
+    }
+  </script>
+
+{{ end }}

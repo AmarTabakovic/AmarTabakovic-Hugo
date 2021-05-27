@@ -19,7 +19,8 @@ h5,
 a,
 span,
 li,
-strong {
+strong,
+table * {
     font-family: $inter-stack;
     line-height: 1.5em;
 
@@ -34,7 +35,8 @@ h2,
 h3,
 strong,
 span,
-li {
+li,
+table * {
     color: var(--color-font-2);
 }
 
@@ -67,7 +69,7 @@ a {
 
 p,
 li,
-span {
+span, td, th {
     font-family: $inter-stack;
     //letter-spacing: -0.06em;
     font-weight: 300;
@@ -77,6 +79,10 @@ span {
         font-size: inherit;
         font-family: inherit;
     }
+}
+
+th {
+    font-weight: 600;
 }
 
 h1 {

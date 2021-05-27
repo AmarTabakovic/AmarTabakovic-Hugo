@@ -9,7 +9,7 @@
 
   <p>I am currently completing an IT internship as part of my education at IMS Basel.</p>
 
-<p>In my free time, I like to play the bass and guitar. Additionally, I have a keen interest in watches, vinyl and mechanical keyboards.</p>
+<p>In my free time, I like to play the bass and guitar. Additionally, I have a keen interest in watches, <a href="/vinyl">vinyl</a> and mechanical keyboards.</p>
 
 <p><a href="blog">Blog</a>
 
@@ -19,6 +19,5 @@
 {{ $built := resources.Get "js/home.js" | resources.Minify }}
 
 <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
-
 
 {{ end }}
