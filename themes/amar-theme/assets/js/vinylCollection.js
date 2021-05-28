@@ -1,10 +1,13 @@
+const APP_KEY = document.currentScript.getAttribute('key')
+const APP_SECRET = document.currentScript.getAttribute('secret')
+
 const vinylListEl = document.getElementById('vinyl-list')
 const loadingEl = document.getElementById('loading')
 const url='https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
 const myHeaders = new Headers();
 
-myHeaders.append('Authorization', 'Discogs key=' + {{ getenv "HUGO_APP_KEY" }} + ', secret=' + {{ getenv "HUGO_APP_SECRET" }})
-
+myHeaders.append('Authorization', 'Discogs key=' + APP_KEY + ', secret=' + APP_SECRET)
+console.log("TET")
 fetch(url, {
   //mode: 'no-cors',
   headers: myHeaders
@@ -13,7 +16,7 @@ fetch(url, {
   return response.json();
 })
 .then(function(jsonResponse) {
-  console.log(jsonResponse)
+  //console.log(jsonResponse)
   loadingEl.style.display = 'none'
   createElements(jsonResponse)
 });
