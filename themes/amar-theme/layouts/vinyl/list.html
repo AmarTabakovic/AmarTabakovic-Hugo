@@ -3,9 +3,11 @@
   <h1>Vinyl</h1>
   <p>My vinyl collection.</p>
   <div id="vinyl-list">
+    <p id="loading">Loading...</p>
   </div>
   <script>
     const vinylListEl = document.getElementById('vinyl-list')
+    const loadingEl = document.getElementById('loading')
     const url='https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
     const myHeaders = new Headers();
 
@@ -20,10 +22,13 @@
     })
     .then(function(jsonResponse) {
       console.log(jsonResponse)
+      loadingEl.style.display = 'none'
       createElements(jsonResponse)
     });
 
     let createElements = (json) => {
+      
+
       for (var i = 0; i < json.releases.length; i++) {
         console.log(json.releases[i].basic_information.title)
         let title = json.releases[i].basic_information.title
