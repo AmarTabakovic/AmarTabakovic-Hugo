@@ -27,10 +27,8 @@
     });
 
     let createElements = (json) => {
-      
 
       for (var i = 0; i < json.releases.length; i++) {
-        console.log(json.releases[i].basic_information.title)
         let title = json.releases[i].basic_information.title
         let titleEl = document.createElement("h3")
         titleEl.innerHTML = title
@@ -40,11 +38,22 @@
         for (var j = 0; j < artists.length; j++) {
           artistNames.push(artists[j].name)
         }
-        console.log(artistNames)
-        artist = artistNames.join(", ")
+        let artist = artistNames.join(", ")
 
         let artistEl = document.createElement("h4")
         artistEl.innerHTML = artist
+
+        //   
+
+        let genreNames = []
+        let genres = json.releases[i].basic_information.genres
+        for (var k = 0; k < genres.length; k++) {
+          genreNames.push(genres[k])
+        }
+        let genre = genreNames.join(", ")
+
+        let genreEl = document.createElement("h4")
+        genreEl.innerHTML = genre
 
 
         let year = json.releases[i].basic_information.year
@@ -67,6 +76,7 @@
         vinylTextEl.append(artistEl)
         vinylTextEl.append(titleEl)
         vinylTextEl.append(yearEl)
+        vinylTextEl.append(genreEl)
 
         vinylEl.append(imageEl)
         vinylEl.append(vinylTextEl)
