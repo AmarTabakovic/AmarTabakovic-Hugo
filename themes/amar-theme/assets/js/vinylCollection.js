@@ -7,21 +7,26 @@ const url='https://api.discogs.com/users/AmarTabakovic/collection/folders/0/rele
 const myHeaders = new Headers();
 
 myHeaders.append('Authorization', 'Discogs key=' + APP_KEY + ', secret=' + APP_SECRET)
-console.log("TET")
 fetch(url, {
-  //mode: 'no-cors',
   headers: myHeaders
 })
 .then(function(response) {
   return response.json();
 })
 .then(function(jsonResponse) {
-  //console.log(jsonResponse)
+  console.log(jsonResponse)
   loadingEl.style.display = 'none'
   createElements(jsonResponse)
 });
 
+
 let createElements = (json) => {
+
+  json.releases.sort((a,b) => {
+    let textA = a.basic_information.artists[0].name.toUpperCase()
+    let textB = b.basic_information.artists[0].name.toUpperCase()
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0
+  })
 
   for (var i = 0; i < json.releases.length; i++) {
     let title = json.releases[i].basic_information.title
@@ -37,8 +42,6 @@ let createElements = (json) => {
 
     let artistEl = document.createElement("h4")
     artistEl.innerHTML = artist
-
-    //   
 
     let genreNames = []
     let genres = json.releases[i].basic_information.genres

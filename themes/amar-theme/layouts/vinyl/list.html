@@ -6,7 +6,7 @@
     <p id="loading">Loading...</p>
   </div>
 
-{{ $built := resources.Get "js/vinylCollection.js" | resources.Minify }}
+{{ $built := resources.Get "js/vinylCollection.js" | resources.Minify | fingerprint }}
 
 <script type="text/javascript" src="{{ $built.RelPermalink }}" key="{{ getenv "HUGO_APP_KEY" }}" secret="{{ getenv "HUGO_APP_SECRET" }}"></script>
 
