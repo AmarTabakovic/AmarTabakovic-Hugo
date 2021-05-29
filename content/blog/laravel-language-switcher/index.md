@@ -94,7 +94,7 @@ public function setLocalization($lang)
 {{% /section %}}
 
 ## Middleware
-For the language to persist across different pages, we need to set the locale every time we call a new page. For this we use middlewares.
+For the language to persist across different pages, we need to set the locale every time we call a new page. For this we use a single middleware.
 
 First we generate the middleware:
 ```bash
