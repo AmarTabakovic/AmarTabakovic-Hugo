@@ -21,9 +21,10 @@ List of things I use on a regular basis.
 
 ## Editor, Terminal, CLI
 - [Visual Studio Code](https://code.visualstudio.com/) with [Vim plugin](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) installed as my main editor
+- [Xcode](https://apps.apple.com/ch/app/xcode/id497799835?l=en&mt=12) for iOS/Mac development
 - [IntelliJ IDEA](https://www.jetbrains.com/de-de/idea/) for anything Java related
-- [Visual Studio](https://visualstudio.microsoft.com/de/) for anything C# related
-- zsh
+- [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) for anything C# related
+- zsh with [Oh My Zsh](https://ohmyz.sh/)
 - [iTerm2](https://iterm2.com/)
 - [Homebrew](https://brew.sh/) for installing tools and software
 - git
@@ -33,7 +34,7 @@ List of things I use on a regular basis.
 
 {{% section %}}
 
-## Other software
+## Other Software
 - [GitHub](https://github.com) for storing and versioning my source code
 - [Adobe XD](https://www.adobe.com/ch_de/products/xd.html) for designing mockups
 - [Insomnia](https://insomnia.rest/) as an API client
@@ -48,7 +49,7 @@ List of things I use on a regular basis.
 
 {{% section %}}
 
-## Platforms and services
+## Platforms and Services
 - [Amazon AWS](https://aws.amazon.com)
 - [cyon](https://cyon.ch) for domains
 - [Netlify](https://netlify.com) for static hosting
@@ -65,14 +66,14 @@ List of things I use on a regular basis.
 - [Ducky One 2 Mini (red switches)](digitec.ch/de/s1/product/ducky-one-2-mini-de-kabelgebunden-tastatur-10934735)
 - [Logitech MX Master 3](https://www.digitec.ch/de/s1/product/logitech-mx-master-3-for-mac-kabellos-maus-11873888)
 - [Sony WH-1000XM3](https://www.digitec.ch/de/s1/product/sony-wh-1000xm3-anc-kopfhoerer-9398808?gclid=CjwKCAjwnPOEBhA0EiwA609Rec8L7zSiYQycspArQt0kkI1qAEg4CE1mNAm4OFUezBEworc7TyMMLBoC7QgQAvD_BwE&gclsrc=aw.ds)
+- [Apple AirPods Pro](https://www.mediamarkt.ch/de/product/_apple-airpods-pro-1959705.html?rbtc=%7C%7C%7C%7Cp%7C%7C&gclid=CjwKCAjwqvyFBhB7EiwAER786ZAksUvVbCRnbxW4ipxxpACpCYZSEo_BpLqj-xGGti96v3450YIc9hoC3AEQAvD_BwE&gclsrc=aw.ds)
 
 
 {{% /section %}}
 
-
 {{% section %}}
 
 ## Code
-C#/ASP.NET, Hugo, JavaScript, Laravel, MS SQL, MySQL, Node.js, PHP, Python, Sass/SCSS, Vue, Webpack, Wordpress
+C#/ASP.NET, Hugo, JavaScript, Laravel, MS SQL, MySQL, Node.js, PHP, Python, Sass/SCSS, Swift, Vue, Webpack, Wordpress
 
 {{% /section %}}
