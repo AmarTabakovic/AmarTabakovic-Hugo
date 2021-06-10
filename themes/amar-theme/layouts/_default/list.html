@@ -9,7 +9,6 @@
     {{ range .Pages.ByPublishDate.Reverse }}
     {{ $time := .ReadingTime }}
     
-    <a href="{{ .RelPermalink }}"> 
     <div class="blog-element">
         
             {{ $dateTime := .PublishDate.Format "2006-01-02" }}
@@ -24,12 +23,17 @@
                   
             </h4>
                     
-                <h2 class="blog-title">{{ .Title }}</h2>
+            <div class="blog-title-wrapper">
+                <a href="{{ .RelPermalink }}"> 
+                    <h2 class="blog-title">{{ .Title }}</h2>
+    
+                </a>
+            </div>
 
                 
         
     </div>
-    </a>
+
     
 
     {{ end }}
