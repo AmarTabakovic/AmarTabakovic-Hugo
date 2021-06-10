@@ -1,28 +1,28 @@
+// Get app keys from script tag (maybe there's a better approach to this)
 const APP_KEY = document.currentScript.getAttribute('key')
 const APP_SECRET = document.currentScript.getAttribute('secret')
 
 const vinylListEl = document.getElementById('vinyl-list')
 const loadingEl = document.getElementById('loading')
-const url='https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
+const url = 'https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
 const myHeaders = new Headers();
 
 myHeaders.append('Authorization', 'Discogs key=' + APP_KEY + ', secret=' + APP_SECRET)
 fetch(url, {
   headers: myHeaders
 })
-.then(function(response) {
-  return response.json();
-})
-.then(function(jsonResponse) {
-  console.log(jsonResponse)
-  loadingEl.style.display = 'none'
-  createElements(jsonResponse)
-});
+  .then(function (response) {
+    return response.json()
+  })
+  .then(function (jsonResponse) {
+    loadingEl.style.display = 'none' // Remove "Loading..."
+    createElements(jsonResponse)
+  })
 
 
 let createElements = (json) => {
-
-  json.releases.sort((a,b) => {
+  // Sort releases by artist's name
+  json.releases.sort((a, b) => {
     let textA = a.basic_information.artists[0].name.toUpperCase()
     let textB = b.basic_information.artists[0].name.toUpperCase()
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0

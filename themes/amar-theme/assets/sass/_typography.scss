@@ -1,6 +1,8 @@
-$inter-stack: Inter, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+//@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-$playfair-stack: "Playfair Display", Baskerville, "Times New Roman", Times Serif;
+$inter-stack:Inter, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+
+//$playfair-stack: "Playfair Display", Baskerville, "Times New Roman", Times Serif;
 
 $inconsolata-stack: "Inconsolata", monospace;
 
@@ -60,11 +62,15 @@ p {
 }
 
 a {
-    color: var(--color-font-1); //$link-color;
+    color: var(--color-font-2); //$link-color;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
     //text-decoration-color: $blend-color;
+
+    &:hover {
+        color: var(--color-font-3);
+    }
 }
 
 p,

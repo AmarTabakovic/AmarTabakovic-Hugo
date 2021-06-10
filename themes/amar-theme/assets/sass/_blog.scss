@@ -8,6 +8,7 @@
 .blog-element {
     //border-top: 1px solid var(--color-font-1);
     padding-bottom: 30px;
+
 }
 
 .blog-left {
@@ -24,9 +25,17 @@
     padding-bottom: 40px;
 }
 
+.blog-title-wrapper {
+    margin-bottom: 26px;
+}
+
 .blog-title {
     padding-top: 0;
-    padding-bottom: 26px;
+    padding-bottom: 0;
+
+    &:hover {
+        color: var(--color-font-3);
+    }
 }
 
 .blog-switcher {

@@ -19,6 +19,7 @@ $border-radius: 10px;
     --color-secondary: rgb(224, 224, 224);
     --color-font-1: #{$almost-black};
     --color-font-2: #{$dark-grey};
+    --color-font-3: #{lighten($dark-grey, 17%)};
 
     --side-padding: 120px;
 
@@ -36,6 +37,7 @@ $border-radius: 10px;
     --color-secondary: rgb(37, 37, 37);
     --color-font-1: #{$white};
     --color-font-2: #{$light-grey};
+    --color-font-3: #{darken($light-grey, 17%)};
 }
 
 //$link-color: $navy;
