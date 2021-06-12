@@ -71,6 +71,7 @@ a {
     &:hover {
         color: var(--color-font-3);
     }
+
 }
 
 p,
@@ -162,6 +163,13 @@ blockquote {
     perspective: 1px;
     margin-bottom: 20px;
 
+    @media screen and (min-width: 600px) and (max-width: 750px) {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(var(--side-padding) * -1);
+        border-radius: 0px;
+    }
+
     pre {
         overflow: scroll !important;
 
@@ -183,6 +191,10 @@ pre {
     padding: 25px;
     border-radius: $border-radius;
     overflow: scroll !important;
+
+    @media screen and (min-width: 600px) and (max-width: 750px) {
+        border-radius: 0px;
+    }
 }
 
 code {
