@@ -1,7 +1,7 @@
 ---
 title: "CV"
 date: 2021-06-07T02:16:05+02:00
-draft: true
+draft: false
 type: "page"
 description: "Curriculum vitae of Amar Tabakovic."
 keywords:
