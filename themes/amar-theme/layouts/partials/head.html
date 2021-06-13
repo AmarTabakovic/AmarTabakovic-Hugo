@@ -1,5 +1,5 @@
 <head>
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  <script>//(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
 
   {{ $built := resources.Get "js/toggleDarkTheme.js" | resources.Minify }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
