@@ -45,7 +45,7 @@
     </div>
 </div>
 
-<div class="">
+<div class="section">
     <h3>Continue reading</h3>
     <div class="next-post">
         {{ if .NextInSection }}
@@ -64,11 +64,32 @@
     </div>
 </div>
 
-<!-- <div> 
-    <br>
-    <span><b>Comments</b></span>
+<div class="section">
+    <form name="commentForm">
+    <h3>Leave a comment</h3>
+    <h4>Name (max. 25 characters)</h4>
+    <input name="name" type="text" maxlength="25" required>
+    <h4>Message (max. 250 characters)</h4>
+    <textarea name="body" maxlength="250" required></textarea>
+    <button id="submit-comment">Submit</button>
+    </form>
+</div>
 
+<div class="section">
+    <h3>Comments</h3>
 
-</div> -->
+    <div id="comment-list">
+
+    </div>
+    
+</div>
+
+{{ $name := .RelPermalink | anchorize}}
+
+{{ $slug := substr (replace $name "blog" "") 0 }}
+
+{{ $built := resources.Get "js/comments.js" | resources.Minify | fingerprint }}
+
+<script type="text/javascript" src="{{ $built.RelPermalink }}" slug="{{$slug}}"></script>
 
 {{ end }}

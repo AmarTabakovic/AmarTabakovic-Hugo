@@ -1,0 +1,66 @@
+input {
+    height: 35px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 250px;
+    resize: vertical;
+}
+
+input, textarea {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-secondary);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 1.5em;
+    font-family: $inter-stack;
+    font-weight: 300;
+    font-size: 15pt;
+    color: var(--color-font-1);
+}
+
+button {
+    background-color: var(--color-secondary);
+    border-radius: $border-radius;
+    color: var(--color-font-1);
+    border: 0;
+    padding: 10px 20px;
+    font-family: $inter-stack;
+    font-weight: 300;
+    font-size: 15pt;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.comment {
+    background-color: var(--color-secondary);
+    border-radius: $border-radius;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+
+}
+
+.comment-name {
+    color: var(--color-font-1);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.comment-body {
+    color: var(--color-font-1);
+    margin-bottom: 20px;
+}
+
+.comment-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply-link {
+    font-size: 15pt;
+    font-weight: 300;
+}
