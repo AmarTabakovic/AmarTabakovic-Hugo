@@ -87,9 +87,16 @@ function timeConverter(){
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
-    var hour = a.getHours();
-    var min = a.getMinutes();
-    var sec = a.getSeconds();
+    var hour = addZero(a.getHours());
+    var min = addZero(a.getMinutes());
+    //var sec = addZero(a.getSeconds());
     var time = month + ' ' + date + ', ' + year + ' - ' + hour + ':' + min ;
     return time;
+  }
+
+  function addZero(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
   }
