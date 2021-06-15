@@ -72,6 +72,8 @@ submitButtonEl.addEventListener('click', function(event) {
             post_name: slug,
             time_stamp: Date.now()
         })
+    }).then( function() {
+        location.reload();
     })
 })
 
