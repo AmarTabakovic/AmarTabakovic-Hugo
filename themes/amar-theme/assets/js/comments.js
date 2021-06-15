@@ -77,8 +77,8 @@ submitButtonEl.addEventListener('click', function(event) {
 
 
 // https://stackoverflow.com/questions/847185/convert-a-unix-timestamp-to-time-in-javascript
-function timeConverter(UNIX_timestamp){
-    var a = new Date(UNIX_timestamp * 1000);
+function timeConverter(){
+    var a = new Date();
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
