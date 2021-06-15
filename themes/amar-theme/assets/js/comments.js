@@ -73,6 +73,8 @@ submitButtonEl.addEventListener('click', function(event) {
             time_stamp: Date.now()
         })
     }).then( function() {
+    
+    }).finally( function() {
         location.reload();
     })
 })
