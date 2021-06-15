@@ -19,13 +19,13 @@ footer {
     display: flex;
     //justify-content: space-between;
 
-    * {
-        padding-right: 40px;
+    a {
+        margin-right: 80px;
     }
 
     @media screen and (max-width: 600px) {
-        * {
-            padding-right: 15px;
+        a {
+            margin-right: 30px;
         }
     }
 }

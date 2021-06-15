@@ -38,7 +38,7 @@
 {{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
 
 <div id="social-icons-list">
-    <span><b>Share</b></span><br>
+    <h3>Share</h3>
     <div id="social-icons">
         <a href="http://twitter.com/share?url={{ $url }}&text={{ $title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}"><i class="icon-twitter"></i></a>
         <a href="http://www.facebook.com/sharer.php?u={{ $url }}"><i class="icon-facebook-official"></i></a>
@@ -46,7 +46,7 @@
 </div>
 
 <div class="">
-    <span><b>Continue reading</b></span>
+    <h3>Continue reading</h3>
     <div class="next-post">
         {{ if .NextInSection }}
         <span>Next: <a class="link-reverse" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title | truncate 50 "..." }}</a></span>
@@ -64,6 +64,11 @@
     </div>
 </div>
 
+<!-- <div> 
+    <br>
+    <span><b>Comments</b></span>
 
+
+</div> -->
 
 {{ end }}

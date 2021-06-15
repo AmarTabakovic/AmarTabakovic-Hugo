@@ -4,6 +4,7 @@ const APP_SECRET = document.currentScript.getAttribute('secret')
 
 const vinylListEl = document.getElementById('vinyl-list')
 const loadingEl = document.getElementById('loading')
+
 const url = 'https://api.discogs.com/users/AmarTabakovic/collection/folders/0/releases'
 const myHeaders = new Headers();
 
