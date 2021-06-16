@@ -63,6 +63,25 @@ submitButtonEl.addEventListener('click', function(event) {
     const nameField = document.querySelector('input[name="name"]');
     const bodyField = document.querySelector('textarea[name="body"]');
 
+    if (nameField.value.length > 25 ) {
+        nameField.value = ''
+        return
+    }
+
+    if (bodyField.value.length > 250 ) {
+        bodyField.value = ''
+        return
+    }
+
+    if (!nameField.value) {
+        return;
+    }
+
+    if (!bodyField.value) {
+        return;
+    }
+
+
     fetch(urlPost, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
