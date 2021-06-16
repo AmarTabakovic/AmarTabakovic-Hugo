@@ -74,6 +74,6 @@ List of things I use on a regular basis.
 {{% section %}}
 
 ## Code
-C#/ASP.NET, Hugo, JavaScript, Laravel, MS SQL, MySQL, Node.js, PHP, Python, Sass/SCSS, Swift, Vue, Webpack, Wordpress
+ASP.NET, C#, Hugo, JavaScript, Laravel, Node.js, NoSQL, PHP, Python, Sass/SCSS, Swift, SQL, Vue, Webpack, Wordpress
 
 {{% /section %}}
