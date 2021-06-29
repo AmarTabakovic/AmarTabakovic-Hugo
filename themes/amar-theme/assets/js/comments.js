@@ -65,12 +65,12 @@ submitButtonEl.addEventListener('click', function(event) {
 
     if (nameField.value.length > 25 ) {
         nameField.value = ''
-        return
+        return;
     }
 
     if (bodyField.value.length > 250 ) {
         bodyField.value = ''
-        return
+        return;
     }
 
     if (!nameField.value) {
@@ -109,7 +109,7 @@ function timeConverter(){
     var hour = addZero(a.getHours());
     var min = addZero(a.getMinutes());
     //var sec = addZero(a.getSeconds());
-    var time = month + ' ' + date + ', ' + year + ' - ' + hour + ':' + min ;
+    var time = month + ' ' + date + ', ' + year + ' • ' + hour + ':' + min ;
     return time;
   }
 
