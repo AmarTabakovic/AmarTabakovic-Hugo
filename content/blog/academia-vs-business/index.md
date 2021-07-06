@@ -1,7 +1,7 @@
 ---
 title: "Academia vs Business"
 date: 2021-07-07T01:23:45+02:00
-draft: true
+draft: false
 description: "A little XKCD comic I like."
 author: "Amar Tabakovic"
 categories:
