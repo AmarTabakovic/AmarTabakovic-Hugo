@@ -9,5 +9,8 @@ categories:
 keywords:
 - "XKCD"
 ---
+{{% section %}}
 
 {{< figure src="https://imgs.xkcd.com/comics/academia_vs_business.png" title="Source: XKCD" >}}
+
+{{% /section %}}
