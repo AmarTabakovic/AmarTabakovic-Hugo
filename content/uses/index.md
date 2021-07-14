@@ -13,16 +13,13 @@ keywords:
 
 List of things I use on a regular basis.
 
-
 {{% /section %}}
-
 
 {{% section %}}
 
 ## Editor, Terminal, CLI
 - [Visual Studio Code](https://code.visualstudio.com/) with [Vim plugin](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) installed as my main editor
 - [Xcode](https://apps.apple.com/ch/app/xcode/id497799835?l=en&mt=12) for iOS/Mac development
-- [IntelliJ IDEA](https://www.jetbrains.com/de-de/idea/) for anything Java related
 - [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) for anything C# related
 - zsh with [Oh My Zsh](https://ohmyz.sh/)
 - [iTerm2](https://iterm2.com/)
@@ -30,7 +27,6 @@ List of things I use on a regular basis.
 - git
 
 {{% /section %}}
-
 
 {{% section %}}
 
@@ -43,6 +39,7 @@ List of things I use on a regular basis.
 - [Google Chrome](https://www.google.com/intl/de/chrome/) as my primary browser
 - [Alfred](https://alfredapp.com) for productivity on Mac
 - [Spotify](https://www.spotify.com/) for listening to music
+- [NordVPN](https://nordvpn.com/) as my VPN service
 
 
 {{% /section %}}
